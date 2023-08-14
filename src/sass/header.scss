@@ -150,9 +150,9 @@
 
 .btn-open {
   border-radius: 8px;
-  @media(max-width: 800px) {
+  @media(max-width: 768px) {
     border-radius: 8px;
-    top: 5px;
+    top: 25px;
     right: 20px;
     position: absolute;
 }
@@ -242,8 +242,11 @@
 .logo_github {
 width:2.5rem;
 height:2.5rem;	
-@media(max-width: 800px){
+@media(max-width: 767px){
   margin-bottom: -5%;
+}
+@media(min-width: 767.01px) and (max-width: 1024px){
+  margin-bottom: -2%;
 }
 }
 /* logo */
@@ -251,7 +254,7 @@ height:2.5rem;
 margin-right:-30%;
 margin-top:-10%;
 animation: title-append .3s ease-out .3s both;
-@media(max-width: 800px){
+@media(max-width: 768px){
 margin-left: -100%;
 margin-top: -10%;
 animation: title-append 0.3s ease-out 0.3s both;
@@ -261,7 +264,7 @@ width: 17%;
 }
 
 /* Header */
-@media(max-width: 800px) {
+@media(max-width: 768px) {
     .header_box {
     flex-direction:column;
     text-align: center
@@ -309,7 +312,7 @@ justify-content: space-between;
 margin: auto;
 max-width: 1300px;
 width: 100%;
-@media(max-width: 800px) {
+@media(max-width: 768px) {
   flex-direction:column;
   text-align: center;
   align-items: center;
@@ -326,23 +329,28 @@ font-family: Raleway-Medium;
 font-size: 25px;
 margin-bottom: 0;
 margin-top: 8px;
-margin-left: -20%;
-@media(max-width: 800px) {
-font-size: 20px;
-}
+margin-left: 0%;
+@media(min-width: 768px) and (max-width: 1024px){
+  margin-left: -75%;
+  font-size: 20px;
+  }
 }
 
 .header_titles_subtitle {
     font-size: 16px;
     margin-top: 0;
     opacity: .7;
-	margin-left: -15%;
+	margin-left: 5%;
+  @media(min-width: 768px) and (max-width: 1024px){
+    margin-left: -75%;
+    font-size: 20px;
+    }
 }
 
 .header_links {
     font-size: 19px;
     margin-right: 20px;
-    @media(max-width: 800px) {
+    @media(max-width: 768px) {
           font-size: 22px;
           margin: 0 0 1rem 1rem!important
     }
@@ -370,15 +378,15 @@ border-radius: 30px;
 border:none;
 padding:10px;
 cursor:pointer;
-margin-left:55%;
+margin-left:65%;
 width: 4%;
 animation: title-append .4s ease-out .4s both;
 a{
   color: #f2a154;
   }
-  @media(max-width: 800px){
-    margin-left: -35%;
-    width: 15%;
+  @media(max-width: 768px){
+    margin-left: -5%;
+    width: 18%;
     margin-top: -5%;
 }
 }

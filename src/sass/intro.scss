@@ -5,6 +5,10 @@
     margin-top: 150px!important;
     &_img {
         width: 17rem;
+        @media(max-width: 768px) {
+            width: 10rem;
+            margin-left: 15%;
+        }
     }
     &_titles {
         margin-left: 1.1rem;
@@ -12,6 +16,7 @@
     &_titles_title  {
         font-family: Raleway-Medium
     }
+
 }
 
 .intro.background_section {
@@ -21,7 +26,10 @@
     max-width: 1440px;
     padding: 1rem;
     width: 80%;
-    z-index: 1
+    z-index: 1;
+    @media(max-width: 768px) {
+    display: block;
+    }
 }
 .background_section{
     -webkit-backdrop-filter: blur(5px);
