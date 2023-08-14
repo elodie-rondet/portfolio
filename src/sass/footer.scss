@@ -1,0 +1,29 @@
+@media(max-width: 768px) {
+    .footer {
+        margin-top:40px!important
+    }
+}
+
+.footer {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: hsla(0,0%,100%,.5);
+    box-shadow: 0 0 5px rgba(0,0,0,.18);
+    margin: 70px -7px -16px;
+    @media(max-width: 768px) {
+            margin-top:40px!important
+    }
+}
+
+.footer_box {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    max-width: 1300px
+}
+
+.footer_text {
+    opacity: .5;
+    padding: .5rem 1rem
+}

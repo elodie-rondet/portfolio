@@ -1,0 +1,107 @@
+img.img-carousel{
+    margin: auto;
+    width: 55%;
+    position: fixed;
+    margin-left: 25%;
+    z-index: 10000;
+    margin-top: 1%;
+}
+
+img.img-carousel-1,img.sophie-carousel, 
+img.sophie-carousel-2,img.kasa-carousel-5{
+    margin: auto;
+    width: 35%;
+    position: fixed;
+    margin-left: 33%;
+    margin-top: 5%;
+    z-index: 10000;
+}
+img.sophie-carousel-1,img.kasa-carousel,img.kasa-carousel-1,img.kasa-carousel-2,img.kasa-carousel-3,
+img.kasa-carousel-4{
+    margin: auto;
+    width: 40%;
+    position: fixed;
+    margin-left: 33%;
+    margin-top: 10%;
+    z-index: 10000;
+}
+img.img-carousel-2{
+    margin: auto;
+    width: 50%;
+    position: fixed;
+    margin-left: 25%;
+    z-index: 10000;
+    margin-top: 1%;
+}
+
+img.close {
+    z-index: 10000;   
+    width: 4rem;
+    right:0%;
+    top:8%;
+    position: fixed;
+}
+img.close:hover,img.sophie-carousel-1:hover,img.sophie-carousel:hover,img.sophie-carousel-2:hover {
+    cursor: pointer;
+}
+
+div#fenetre_modal_open {
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    color: #242424;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100vw;
+    z-index: 10;	
+    position: fixed;
+    }
+
+
+.carousel{
+    background-color: hsla(0,0%,91%,.9);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2000;
+    @media screen and (max-width: 650px){
+        height: 200px;  
+        margin: 20px auto;   
+    }
+    &_arrow{
+        position: absolute;
+        top: 50%;
+        height: 15%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:active{
+            transform: translateY(-50%) scale(0.9);
+        }
+        &_right{
+            right: 25px;
+            position: fixed;
+            width: 4rem;
+            height: 4rem;
+        }
+        &_left{
+            left: 25px;
+            position: fixed;
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    .slideCount{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 500;
+        font-size: clamp(14px, 2vw, 18px);
+    }
+}
