@@ -7,7 +7,7 @@
         width: 17rem;
         @media(max-width: 768px) {
             width: 10rem;
-            margin-left: 15%;
+            margin-left: 0%;
         }
     }
     &_titles {
@@ -23,11 +23,11 @@
     display: flex;
     flex-direction: row;
     margin: auto ;
-    max-width: 1440px;
+    max-width: 1200px;
     padding: 1rem;
     width: 80%;
     z-index: 1;
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
     display: block;
     }
 }

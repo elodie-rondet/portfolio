@@ -66,15 +66,12 @@ const Booki = () => {
     			<h2>Les différentes pages développées</h2>
     			<div className="conteneur_article">
     				<div className="conteneur-titre-text">
-    					<h2 className="desktop">Version desktop</h2>
     					<img className="img-article-horizontal-booki" src={BookiDesktop} alt="Booki desktop" onClick={() => {setToggle(!toggle)}}></img>
     				</div>
     				<div className="conteneur-titre-text">
-    					<h2 className="tablette">Version tablette</h2>
     					<img className="img-article-horizontal-kasa" src={BookiTablette} alt="Booki tablette" onClick={() => {setToggle(!toggle)}}></img>
     				</div>
     				<div className="conteneur-titre-text">
-    					<h2 className="desktop">Version mobile</h2>
     					<img className="img-article-horizontal-booki" src={BookiMobile} alt="Booki mobile" onClick={() => {setToggle(!toggle)}}></img>
     				</div>
     			</div>
