@@ -3,10 +3,10 @@ import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import Gallery from "../components/Projets/Gallerie";
 import Competences from "../images/competences_kasa.png";
-import KasaAccueil from "../images/kasa_accueil.png";
-import KasaAppartement from "../images/kasa_appartement.png";
-import KasaErreur from "../images/page_erreur_kasa.png";
-import KasaApropos from "../images/page_apropos_kasa.png";
+import KasaAccueil from "../images/kasa-accueil.webp";
+import KasaAppartement from "../images/kasa-appartement.webp";
+import KasaErreur from "../images/kasa-pageErreur.webp";
+import KasaApropos from "../images/kasa-Apropos.webp";
 import KasaMobile from "../images/kasa-mobile.webp";
 import Kasa from "../images/kasa.png";
 import faXmark from "../images/fermeture.png";
@@ -82,27 +82,27 @@ const SophieBluel = () => {
 			<div className="conteneur_article">
 				<div className="conteneur-titre-text">
 					<h2 className="titre-page">Page d'accueil</h2>
-					<img className="article-horizontal-kasa-page" src={KasaAccueil} alt="Kasa accueil"  onClick={() => {setToggle(!toggle)}}/>
+					<img className="img-article-horizontal-booki" src={KasaAccueil} alt="Kasa accueil"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 				<div className="conteneur-titre-text">
 					<h2 className="titre-page">Page appartement</h2>
-					<img className="article-horizontal-kasa-page" src={KasaAppartement} alt="Kasa appartement"  onClick={() => {setToggle(!toggle)}}/>
+					<img className="img-article-horizontal-booki" src={KasaAppartement} alt="Kasa appartement"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 			</div>
 			<div className="conteneur_article">
 				<div className="conteneur-titre-text">
 					<h2 className="titre-page">Page à propos</h2>
-					<img className="article-horizontal-kasa-page" src={KasaApropos} alt="Kasa A propos"  onClick={() => {setToggle(!toggle)}}/>
+					<img className="img-article-horizontal-booki" src={KasaApropos} alt="Kasa A propos"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 				<div className="conteneur-titre-text">
 					<h2 className="titre-page">Page erreur</h2>
-					<img className="article-horizontal-kasa-page" src={KasaErreur} alt="Kasa Page erreur"  onClick={() => {setToggle(!toggle)}}/>
+					<img className="img-article-horizontal-booki" src={KasaErreur} alt="Kasa Page erreur"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 			</div>
             <div className="conteneur_article">
 				<div className="conteneur-titre-text">
 					<h2 className="titre-page">Version mobile</h2>
-					<img className="img-article-horizontal-kasa" src={KasaMobile} alt="Kasa mobile" onClick={() => {setToggle(!toggle)}}/>
+					<img className="img-article-horizontal-booki" src={KasaMobile} alt="Kasa mobile"/>
 				</div>
 			</div>
 		</article>

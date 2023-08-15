@@ -15,6 +15,9 @@ const Header = () => {
 	<header className={toggle ? "header_modal_open" : "header"}>
 		<div className="header_box">
 			<NavLink end to='/'>
+            	<img className="logo" src={Logo} alt=""></img>
+			</NavLink>
+			<NavLink end to='/'>
 			<div className="header_titles">
 				<h1 className="header_titles_title">Rondet Elodie</h1>
 				<h2 className="header_titles_subtitle">Développeuse Web</h2>
