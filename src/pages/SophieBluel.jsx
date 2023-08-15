@@ -6,7 +6,8 @@ import Competences from "../images/competences_booki.png";
 import SophieBluelGalerie from "../images/galerie_photo.png";
 import SophieBluelTablette from "../images/sophie-bluel-tablette.png";
 import SophieBluelLogin from "../images/sophie_bluel_login.png";
-import SophieBluelAjoutTravaux from "../images/sophie_bluel_login.png";
+import SophieBluelAccueil from "../images/sophie-bluel.png";
+import SophieBluelAjoutTravaux from "../images/popup_ajout_photo.png";
 import faXmark from "../images/fermeture.png";
 import { NavLink } from 'react-router-dom';
 import '../sass/header.scss';
@@ -36,7 +37,7 @@ const SophieBluel = () => {
 	<h1>Projet : Sophie Bluel</h1>
 	<article className="project_page_pres_article">
 	<div className="conteneur_article">
-		<img className="img-article" src={SophieBluelTablette} alt=""/>
+		<img className="img-article" src={SophieBluelAccueil} alt=""/>
 		<div className="conteneur-titre-text">
 			<h2 className="project_page_pres_title">Contexte :
 			</h2>
@@ -60,11 +61,11 @@ const SophieBluel = () => {
 		</div>
 	</article>
 	<div id="conteneur-button">
-		<button className="button-page" data-testid="button">
+		<button className="button-page-lien" data-testid="button">
         <NavLink className="nav-link" to="https://github.com/elodie-rondet/sophie-bluel">
             github du projet</NavLink></button>
 
-		<button className="button-page" data-testid="button">
+		<button className="button-page-lien" data-testid="button">
             <NavLink className="nav-link" to="https://sophie-bluel.elo-web.fr/">
             demo</NavLink>
 		</button>
@@ -84,12 +85,7 @@ const SophieBluel = () => {
 					<img className="img-article-horizontal-booki" src={SophieBluelLogin} alt="Kasa A propos"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 				<div className="conteneur-titre-text">
-					<img className="img-article-horizontal-booki" src={KasaErreur} alt="Kasa Page erreur"  onClick={() => {setToggle(!toggle)}}/>
-				</div>
-			</div>
-            <div className="conteneur_article">
-				<div className="conteneur-titre-text">
-					<img className="img-article-horizontal-booki" src={KasaMobile} alt="Kasa mobile"/>
+					<img className="img-article-horizontal-booki" src={SophieBluelAjoutTravaux} alt="Kasa Page erreur"  onClick={() => {setToggle(!toggle)}}/>
 				</div>
 			</div>
 		</article>

@@ -44,11 +44,11 @@ const NinaCarducci = () => {
 	            </div>
 	        </article>
 	        <div id="conteneur-button">
-		        <button className="button-page" data-testid="button">
+		        <button className="button-page-lien" data-testid="button">
                     <NavLink className="nav-link" to="https://github.com/elodie-rondet/nina-carducci.github.io-master">
                     github du projet</NavLink></button>
 
-		        <button className="button-page" data-testid="button">
+		        <button className="button-page-lien" data-testid="button">
 			        <a href="https://test.elo-web.fr/">demo</a>
 		        </button>
 	        </div>

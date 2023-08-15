@@ -68,11 +68,11 @@ const SophieBluel = () => {
 			<img className="img-techno-optimisation" src={Competences} alt="Competences"/>
 		</article>
 		<div id="conteneur-button">
-            <button className="button-page" data-testid="button">
+            <button className="button-page-lien" data-testid="button">
             <NavLink className="nav-link" to="https://github.com/elodie-rondet/kasa">
             github du projet</NavLink></button>
 
-		<button className="button-page" data-testid="button">
+		<button className="button-page-lien" data-testid="button">
             <NavLink className="nav-link" to="https://elodie-rondet.github.io/kasa/">
             demo</NavLink>
 		</button>

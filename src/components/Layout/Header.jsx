@@ -5,7 +5,7 @@ import MenuBurger from "../../images/menu-burger.png";
 import Logo from "../../images/logo.png";
 import LogoGithub from "../../images/logo_github.png";
 import '../../sass/header.scss';
-import ImageModale from "../../images/photo.png";
+import ImageModale from "../../images/photo.jpg";
 import { useState } from 'react';
 	
 const Header = () => {
