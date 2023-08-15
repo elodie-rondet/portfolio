@@ -6,6 +6,7 @@ import Competences from "../images/competences_booki.png";
 import SophieBluelGalerie from "../images/galerie_photo.png";
 import SophieBluelTablette from "../images/sophie-bluel-tablette.png";
 import SophieBluelLogin from "../images/sophie_bluel_login.png";
+import SophieBluelAjoutTravaux from "../images/sophie_bluel_login.png";
 import faXmark from "../images/fermeture.png";
 import { NavLink } from 'react-router-dom';
 import '../sass/header.scss';
@@ -69,34 +70,29 @@ const SophieBluel = () => {
 		</button>
 	</div>
 	<article className="project_page_pres_article">
-	<h1>Les différentes pages développées</h1>
-	<div className="conteneur_article">
-		<img className="img-article" src={SophieBluelTablette} alt="Sophie Bluel accueil" onClick={() => {setToggle(!toggle)}}/>
-		<div className="conteneur-titre-text">
-			<h2 className="project_page_pres_title">Page d'accueil en mode hors connexion</h2>
-			<p className="project_page_pres_text"> - Récupération des travaux depuis le backend. Interrogation de l'API avec Fetch</p>
-		</div>
-	</div>
-	<div className="conteneur_article">
-		<img className="img-article-horizontal" src={SophieBluelLogin} alt="Sophie Bluel page Login" onClick={() => {setToggle(!toggle)}}/>
-		<div className="conteneur-titre-text">
-			<h2 className="project_page_pres_title">Page connexion</h2>
-			<p className="project_page_pres_text"> Développement de la page de connexion fonctionnelle avec:</p>
-			<p>- Redirection vers la page d’accueil quand la connexion est confirmée.</p>
-			<p>- Un message d’erreur quand les informations utilisateur / mot de passe ne sont pas correctes.</p>
-		</div>
-	</div>
-	<div className="conteneur_article">
-		<img className="img-article" src={SophieBluelGalerie} alt="Sophie Bluel Galerie" onClick={() => {setToggle(!toggle)}}/>
-		<div className="conteneur-titre-text">
-			<h2 className="project_page_pres_title">Ajout de la fenêtre modale</h2>
-			<p>- Ajouter des médias dans la galerie.</p>
-			<p>- Suppression de travaux existants</p>
-			<p>- Ajout d'un nouveau projet au backend</p>
-			<p>Objectifs: Interrogation du backend avec Fetch avec les requêtes POST, PUT et DELETE</p>
-		</div>
-	</div>
-	</article>
+			<h2>Les différentes pages développées</h2>
+			<div className="conteneur_article">
+				<div className="conteneur-titre-text">
+					<img className="img-article-horizontal-booki" src={SophieBluelGalerie} alt="Kasa accueil"  onClick={() => {setToggle(!toggle)}}/>
+				</div>
+				<div className="conteneur-titre-text">
+					<img className="img-article-horizontal-booki" src={SophieBluelTablette} alt="Kasa appartement"  onClick={() => {setToggle(!toggle)}}/>
+				</div>
+			</div>
+			<div className="conteneur_article">
+				<div className="conteneur-titre-text">
+					<img className="img-article-horizontal-booki" src={SophieBluelLogin} alt="Kasa A propos"  onClick={() => {setToggle(!toggle)}}/>
+				</div>
+				<div className="conteneur-titre-text">
+					<img className="img-article-horizontal-booki" src={KasaErreur} alt="Kasa Page erreur"  onClick={() => {setToggle(!toggle)}}/>
+				</div>
+			</div>
+            <div className="conteneur_article">
+				<div className="conteneur-titre-text">
+					<img className="img-article-horizontal-booki" src={KasaMobile} alt="Kasa mobile"/>
+				</div>
+			</div>
+		</article>
 </section>
     <Footer />
         </>
