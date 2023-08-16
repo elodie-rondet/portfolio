@@ -6,8 +6,10 @@ import SophieBluel from "../../images/sophie-bluel.png";
 import NinaCarducci from "../../images/nina_carducci.png";
 import Kasa from "../../images/kasa.png";
 import MonVieuxGrimoire from "../../images/mon-vieux-grimoire.png";
+import {ProjectsList} from "../ProjectsList/projectsList";
 	
 const IntroProjets = () => {
+	const project = ProjectsList.find(project => project.name === "Booki")
     return (
 	<>	
 <section className="competences_section">
@@ -15,7 +17,7 @@ const IntroProjets = () => {
 </h1>
 <ul className="projects_list">
 	<li className="project_item">
-    <NavLink className="nav-link" end to="booki">
+    <NavLink className="nav-link" end to="Booki">
 			<figure className="project_item_figure background_section">
 				<img src={BookiPortfolio} alt="page d'accueil agence de voyage" className="project_item_figure_img">
                 </img>
@@ -39,7 +41,7 @@ const IntroProjets = () => {
         </NavLink>
 	</li>
 		<li className="project_item">
-		<NavLink className="nav-link" end to="nina-carducci">
+		<NavLink className="nav-link" end to="Nina Carducci">
 			<figure className="project_item_figure background_section">
 				<img src={NinaCarducci} alt="Nina carducci - JavaScript openclassrooms" className="project_item_figure_img"></img>
 				<figcaption className="project_item_figcaption">
@@ -50,7 +52,7 @@ const IntroProjets = () => {
         </NavLink>
 	</li>
 	<li className="project_item">
-        <NavLink className="nav-link" end to="kasa">
+        <NavLink className="nav-link" end to="Kasa">
 			<figure className="project_item_figure background_section">
 				<img src={Kasa} alt="cover Kasa openclassrooms" className="project_item_figure_img"></img>
 					<figcaption className="project_item_figcaption">

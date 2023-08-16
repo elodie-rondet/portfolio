@@ -12,10 +12,8 @@ const IndexRoutes = () => {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='*' element={<Home />}/>
-                <Route path='/booki' element={<Booki />}/>
+                <Route path='/:name' element={<Booki />}/>
                 <Route path='/sophie-bluel' element={<SophieBluel />}/>
-                <Route path='/nina-carducci' element={<NinaCarducci />}/>
-                <Route path='/kasa' element={<Kasa />}/>
             </Routes>
         </BrowserRouter>
     )

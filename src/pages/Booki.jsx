@@ -1,79 +1,80 @@
 import React from "react"
 import Header from "../components/Layout/Header";
+import { ProjectsList  } from '../components/ProjectsList/projectsList';
 import Footer from "../components/Layout/Footer";
 import Gallery from "../components/Projets/Gallerie";
-import CompetencesBooki from "../images/competences_booki.png";
-import BookiDesktop from "../images/booki.png";
-import BookiTablette from "../images/booki_tablette.png";
-import BookiMobile from "../images/booki-mobile.png";
-import faXmark from "../images/fermeture.png";
 import '../sass/header.scss';
 import '../sass/footer.scss';
 import '../sass/page.scss';
 import '../sass/main.scss';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Booki = () => {
-    const datas = [{
-            "pictures": [
-                BookiDesktop,
-                BookiTablette,
-                BookiMobile
-            ]
-        }
-    
-    ];
+    const { name } = useParams()
+    const project = ProjectsList.find(project => project.name === name)
     const [toggle, setToggle] = useState(false);
+    const classCompetences = project.classcompetences;
     return (
         <>
     <Header />
     {toggle && (<>
-    <img className="close" src={faXmark} alt="" onClick={() => {setToggle(!toggle)}}></img>
-    <Gallery imageSlider={datas[0].pictures} classSlider={"img-carousel"} /></>)}
+    
+    <img className="close" src={project.fermeture} alt="" onClick={() => {setToggle(!toggle)}}></img>
+    <Gallery imageSlider={project.pictures} classSlider={"img-carousel"} /></>)}
     <section className="project_page_pres background_section">
-    	<h1>Projet : Booki</h1>
+    	<h1>Projet : {project.name}</h1>
     	<article className="project_page_pres_article">
     	<div className="conteneur_article">
-    		<img className="img-article" src={BookiDesktop} alt="Booki version Desktop"></img>
+    		<img className="img-article" src={project.imageAccueil} alt={name}></img>
     		<div className="conteneur-titre-text">
     			<h2 className="project_page_pres_title">Contexte :
     			</h2>
-    			<p className="project_page_pres_text"> Créez la page d'accueil d'une agence de voyage avec HTML & CSS
+    			<p className="project_page_pres_text"> {project.context}
     		</p>
     		</div>
     	</div>
     	</article>
     	<article className="project_page_pres_article">
     		<div className="conteneur_article">
-    			<div className="conteneur-titre-text">
+    			<div className={"conteneur-titre-text"+classCompetences}src={project.competences}>
     				<h2 className="project_page_pres_title">Objectifs :</h2>
-    					<p>L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
-    						Il faut développer l'interface du site avec du code HTML et CSS</p>
+    					<p>{project.objectifs1}</p>
+                        <p>{project.objectifs2}</p>
+                        <p>{project.objectifs3}</p>
+                        <p>{project.objectifs4}</p>
+                        <p>{project.objectifs5}</p>
+                        <p>{project.objectifs6}</p>
+
     			</div>
-    			<div className="conteneur-titre-text">
-    				<h2 className="project_page_pres_title">Technologies utilisées :</h2>
-    				<img className="img-techno-optimisation" src={CompetencesBooki} alt="Compétences"></img>
-    			</div>
+                <div className={"conteneur-titre-text"+classCompetences}src={project.competences}>
+                <h2 className="project_page_pres_title">{project.technologies}</h2>
+                <img className={"img-techno-optimisation"+classCompetences}src={project.competences} alt="Compétences"/>
+                </div>
+
     		</div>
     	</article>
-    	<div id="conteneur-button">
-    		<button className="button-page" data-testid="button"><a href="https://github.com/elodie-rondet/kasa">github du projet</a></button>
-    		<button className="button-page" data-testid="button">
-    			<a href="https://booki.elo-web.fr/">demo</a>
+    	<div id={"conteneur-button"+classCompetences}>
+    		<button className="button-page-lien" data-testid="button">
+                <a href={project.gitLink}>github du projet</a>
+            </button>
+    		<button className="button-page-lien" data-testid="button">
+    			<a href={project.demoLink}>demo</a>
     		</button>
     	</div>
     		<article className="project_page_pres_article">
-    			<h2>Les différentes pages développées</h2>
-    			<div className="conteneur_article">
-    				<div className="conteneur-titre-text">
-    					<img className="img-article-horizontal-booki" src={BookiDesktop} alt="Booki desktop" onClick={() => {setToggle(!toggle)}}></img>
-    				</div>
-    				<div className="conteneur-titre-text">
-    					<img className="img-article-horizontal-kasa" src={BookiTablette} alt="Booki tablette" onClick={() => {setToggle(!toggle)}}></img>
-    				</div>
-    				<div className="conteneur-titre-text">
-    					<img className="img-article-horizontal-booki" src={BookiMobile} alt="Booki mobile" onClick={() => {setToggle(!toggle)}}></img>
-    				</div>
+    			<h2>{project.titrePageDéveloppees}</h2>
+    			<div className="conteneur_article_image">
+                {project.pictures.map((picture) => (
+                    <div className="conteneur-image">
+                            <img 
+                                src={picture} 
+                                alt={project.name} 
+                                className={"img-article-horizontal-booki"} 
+                                onClick={() => {setToggle(!toggle)}}
+                            />
+                            </div>
+                        ))}
     			</div>
     		</article>
     </section>

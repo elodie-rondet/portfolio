@@ -39,7 +39,7 @@ const NinaCarducci = () => {
 	        </article>
 	        <article className="project_page_pres_article">
 	            <h2 className="project_page_pres_title">Technologies utilisées :</h2>
-	            <img className="img-techno-optimisation" src={Competences} alt="Competences"/>
+	            <img className="img-techno-optimisation-carducci" src={Competences} alt="Competences"/>
 	            <div className="project_page_pres_logos">
 	            </div>
 	        </article>

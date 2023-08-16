@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import Gallery from "../components/Projets/Gallerie";
-import Competences from "../images/competences_booki.png";
+import Competences from "../images/sophieBluelIcons.png";
 import SophieBluelGalerie from "../images/galerie_photo.png";
 import SophieBluelTablette from "../images/sophie-bluel-tablette.png";
 import SophieBluelLogin from "../images/sophie_bluel_login.png";
@@ -56,7 +56,7 @@ const SophieBluel = () => {
 			</div>
 			<div className="conteneur-titre-text">
 				<h2 className="project_page_pres_title">Technologies utilisées :</h2>
-				<img className="img-techno-optimisation" src={Competences} alt="Compétences"/>
+				<img className="img-techno-optimisation-sophieBluel" src={Competences} alt="Compétences"/>
 			</div>
 		</div>
 	</article>

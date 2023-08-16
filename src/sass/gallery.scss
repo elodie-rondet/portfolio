@@ -70,6 +70,9 @@ div#fenetre_modal_open {
     right: 0;
     top: 0;
     z-index: 2000;
+    align-items: center;
+    display: flex;
+    transform: translateX(0px);
     @media screen and (max-width: 650px){
         height: 200px;  
         margin: 20px auto;   
