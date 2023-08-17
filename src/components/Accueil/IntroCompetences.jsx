@@ -12,13 +12,13 @@ const IntroCompetences = () => {
         <img src={LogoFront} alt="Logo Front" className="competences_img"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Front-End</h1>
-        <ul class="technologies-list">
-            <li class="techno-item">HTML</li>
-            <li class="techno-item">CSS</li>
-            <li class="techno-item">SASS</li>
-            <li class="techno-item">Javascript</li>
-            <li class="techno-item">React</li>
-            <li class="techno-item">Wordpress</li>
+        <ul className="technologies-list">
+            <li className="techno-item">HTML</li>
+            <li className="techno-item">CSS</li>
+            <li className="techno-item">SASS</li>
+            <li className="techno-item">Javascript</li>
+            <li className="techno-item">React</li>
+            <li className="techno-item">Wordpress</li>
         </ul>
 	    </div>
         </div>
@@ -27,24 +27,24 @@ const IntroCompetences = () => {
         <img src={LogoBack} alt="Logo Backend" className="competences_img"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Back-End</h1>
-        <ul class="technologies-list">
-            <li class="techno-item">NodeJS</li>
-            <li class="techno-item">PHP</li>
-            <li class="techno-item">C#</li>
-            <li class="techno-item">Javascript</li>
-            <li class="techno-item">MongoDB</li>
-            <li class="techno-item">MySql</li>
-            <li class="techno-item">Sql Server</li>
+        <ul className="technologies-list">
+            <li className="techno-item">NodeJS</li>
+            <li className="techno-item">PHP</li>
+            <li className="techno-item">C#</li>
+            <li className="techno-item">Javascript</li>
+            <li className="techno-item">MongoDB</li>
+            <li className="techno-item">MySql</li>
+            <li className="techno-item">Sql Server</li>
         </ul>
         </div>
         </div>
         <div className="competences_accueil">
         <h1 className="competences_title">Outils maitrisés</h1>
-        <ul class="technologies-list">
-            <li class="techno-item">Visual Studio Code</li>
-            <li class="techno-item">Visual Studio</li>
-            <li class="techno-item">Github</li>
-            <li class="techno-item">SVN</li>
+        <ul className="technologies-list">
+            <li className="techno-item">Visual Studio Code</li>
+            <li className="techno-item">Visual Studio</li>
+            <li className="techno-item">Github</li>
+            <li className="techno-item">SVN</li>
         </ul>
         </div>
 

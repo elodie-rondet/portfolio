@@ -4,7 +4,6 @@ import Footer from "../components/Layout/Footer";
 import Intro from "../components/Accueil/Intro";
 import IntroCompetences from "../components/Accueil/IntroCompetences";
 import IntroProjets from "../components/Accueil/IntroProjets";
-import ImgHeader from "../images/fond-test.jpg";
 import '../sass/main.scss';
 
 const Accueil = () => {

@@ -9,20 +9,12 @@ import ImageModale from "../../images/photo.jpg";
 import { useState } from 'react';
 	
 const Header = () => {
-	const [toggle, setToggle] = useState(false);
-	const subtitle = "Développeuse Web";
-	let index = 0;
-	const AfficheSubTitle = () => {
-		for (index = 0; subtitle.length; ++index) {
-			const slicedItems = subtitle.slice(0, index);
-			index++;
-			if (index > subtitle.length)
-			index = 0;
+const [toggle, setToggle] = useState(false);
+let contenu = " ";
 
-		}
-	}
 	  
     return (
+		
 	<>	
 	<header className={toggle ? "header_modal_open" : "header"}>
 		<div className="header_box">
@@ -32,7 +24,23 @@ const Header = () => {
 			<NavLink end to='/'>
 			<div className="header_titles">
 				<h1 className="header_titles_title">Rondet Elodie</h1>
-				<h2 className="header_titles_subtitle">{AfficheSubTitle}</h2>
+				<h2 className="header_titles_subtitle">
+				<span class="letter01">D</span>
+				<span class="letter02">é</span>
+				<span class="letter03">v</span>
+				<span class="letter04">e</span>
+				<span class="letter05">l</span>
+				<span class="letter06">o</span>
+				<span class="letter07">p</span>
+				<span class="letter08">p</span>
+				<span class="letter09">e</span>
+				<span class="letter10">u</span>
+				<span class="letter11">r</span>
+				<span class="letter12"></span>
+				<span class="letter13">w</span>
+				<span class="letter14">e</span>
+				<span class="letter15">b</span>
+					</h2>
 			</div>
 			</NavLink>
 			<button className="button button--outlined">

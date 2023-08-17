@@ -6,10 +6,8 @@ import SophieBluel from "../../images/sophie-bluel.png";
 import NinaCarducci from "../../images/nina_carducci.png";
 import Kasa from "../../images/kasa.png";
 import MonVieuxGrimoire from "../../images/mon-vieux-grimoire.png";
-import {ProjectsList} from "../ProjectsList/projectsList";
 	
 const IntroProjets = () => {
-	const project = ProjectsList.find(project => project.name === "Booki")
     return (
 	<>	
 <section className="competences_section">

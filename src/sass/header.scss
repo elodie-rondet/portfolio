@@ -72,6 +72,8 @@
   cursor: pointer;
 }
 
+
+
 .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
@@ -390,6 +392,34 @@ width: 100%;
     display:none;
     }
 }
+
+
+
+/* Animations des lettres */
+h2.header_titles_subtitle span {opacity:0;}
+.letter01 {animation:letters 0s ease 0000ms forwards;}
+.letter02 {animation:letters 0s ease 0500ms forwards;}
+.letter03 {animation:letters 0s ease 0700ms forwards;}
+.letter04 {animation:letters 0s ease 0900ms forwards;}
+.letter05 {animation:letters 0s ease 1100ms forwards;}
+.letter06 {animation:letters 0s ease 1300ms forwards;}
+.letter07 {animation:letters 0s ease 1500ms forwards;}
+.letter08 {animation:letters 0s ease 1700ms forwards;}
+.letter09 {animation:letters 0s ease 1900ms forwards;}
+.letter10 {animation:letters 0s ease 2100ms forwards;}
+.letter11 {animation:letters 0s ease 2300ms forwards;}
+.letter12 {animation:letters 0s ease 2500ms forwards;}
+.letter13 {animation:letters 0s ease 2700ms forwards;}
+.letter14 {animation:letters 0s ease 2900ms forwards;}
+.letter15 {animation:letters 0s ease 3100ms forwards;}
+.letter16 {animation:letters 0s ease 3300ms forwards;}
+@keyframes letters {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+.letter12 {
+  margin-left: 10px;}
+
 
 .header_links {
     font-size: 19px;
