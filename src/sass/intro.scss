@@ -9,13 +9,15 @@
             width: 10rem;
             margin-left: 15%;
         }
-        @media(min-width: 767.01px) and (min-width: 1023px) {
+        @media(min-width: 767.01px) and (max-width: 1023px) {
             width: 10rem;
             margin-left: 0%;
         }
     }
     &_titles {
         margin-left: 1.1rem;
+        width:60%;
+        margin: auto;
     }
     &_titles_title  {
         font-family: Raleway-Medium
@@ -26,11 +28,25 @@
 .intro.background_section {
     display: flex;
     flex-direction: row;
-    margin: auto ;
-    max-width: 1200px;
+    /* margin: auto; */
+    /* max-width: 1200px; */
     padding: 1rem;
-    width: 80%;
+    /* width: 80%; */
+    height: 300px;
     z-index: 1;
+    background-image: url(../images/fond-test.jpg);
+    background-size: cover;
+    margin-top: -2%;
+    width: 102%;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    left: 0;
+    /* position: fixed; */
+    margin-left: -2%;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media(max-width: 767px) {
     display: block;
     }

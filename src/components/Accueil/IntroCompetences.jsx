@@ -1,25 +1,54 @@
 import React from "react"
 import '../../sass/introCompetences.scss';
-import Javascript from "../../images/javascript.png";
-import CSharp from "../../images/c_sharp.png";
-import Photoshop from "../../images/photoshop.png";
-import Wordpress from "../../images/wordpress.png";
-import Reactlogo from "../../images/react.png";
+import LogoFront from "../../images/logo-frontend.png";
+import LogoBack from "../../images/logo-backend.png";
 	
 const IntroCompetences = () => {
 
     return (
         <>	
-        <section className="competences_section">
-		<h1 className="competences_title">Compétences, CMS et logiciels maitrisés</h1>
-        <div className="img_competences">
-            <img src={Javascript} alt="" id="competences_img_5" className="competences_img"></img>
-            <img src={CSharp} alt="" className="competences_img"></img>
-            <img src={Photoshop} alt="" id="competences_img_6" className="competences_img"></img>
-            <img src={Wordpress} alt="" id="competences_img_1" className="competences_img"></img>
-            <img src={Reactlogo} alt="" id="competences_img_7" className="competences_img"></img>
-		</div>
-	    </section>
+     <section class="competences">
+     <div className="conteneur">
+        <img src={LogoFront} alt="Logo Front" className="competences_img"></img>
+        <div className="competences_accueil">
+		<h1 className="competences_title">Front-End</h1>
+        <ul class="technologies-list">
+            <li class="techno-item">HTML</li>
+            <li class="techno-item">CSS</li>
+            <li class="techno-item">SASS</li>
+            <li class="techno-item">Javascript</li>
+            <li class="techno-item">React</li>
+            <li class="techno-item">Wordpress</li>
+        </ul>
+	    </div>
+        </div>
+        
+        <div className="conteneur">
+        <img src={LogoBack} alt="Logo Backend" className="competences_img"></img>
+        <div className="competences_accueil">
+		<h1 className="competences_title">Back-End</h1>
+        <ul class="technologies-list">
+            <li class="techno-item">NodeJS</li>
+            <li class="techno-item">PHP</li>
+            <li class="techno-item">C#</li>
+            <li class="techno-item">Javascript</li>
+            <li class="techno-item">MongoDB</li>
+            <li class="techno-item">MySql</li>
+            <li class="techno-item">Sql Server</li>
+        </ul>
+        </div>
+        </div>
+        <div className="competences_accueil">
+        <h1 className="competences_title">Outils maitrisés</h1>
+        <ul class="technologies-list">
+            <li class="techno-item">Visual Studio Code</li>
+            <li class="techno-item">Visual Studio</li>
+            <li class="techno-item">Github</li>
+            <li class="techno-item">SVN</li>
+        </ul>
+        </div>
+
+        </section>
         </>
     )
 }

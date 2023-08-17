@@ -103,5 +103,28 @@ export const ProjectsList = [
         gitLink: 'https://github.com/elodie-rondet/nina-carducci.github.io-master',
         demoLink:'https://test.elo-web.fr/',
         titrePageDéveloppees : ''
+    },
+    {
+        id: '4',
+        name: 'Nina Carducci',
+        resume: 'Création d\'une page web dynamique d\'une architecte',
+        context: 'En tant que développeur freelance, il s\'agissait de proposer un service d\'optimisation SEO à de nouveaux clients. Parmi les prospects, il y a le site de Nina Carducci, une photographe. La cliente répond positivement à la proposition en demandant une optimisation de son site.',
+        objectifs: 'Objectifs :',
+        objectifs1: '- Faire une optimisation globale du site, tant sur les performances que sur le SEO ;',
+        objectifs2: '- Mettre en place le référencement local en utilisant Schema.org ;',
+        objectifs3: '- Ajouter les metas pour les réseaux sociaux ;',
+        objectifs4: '- Faire les modifications liées à l’accessibilité du site ;',
+        objectifs5: '>- Produire un rapport d’optimisation présentant toutes vos actions et leur impact.',
+        objectifs6: '',        
+        technologies: 'Technologies utilisées :',
+        imageAccueil : NinaCarducciAccueil,
+        pictures: [],
+        competences: CompetencesNinaCarducci,
+        classcompetences: '-carducci',
+        fermeture: Fermeture,
+        git:'github du projet',
+        gitLink: 'https://github.com/elodie-rondet/nina-carducci.github.io-master',
+        demoLink:'https://test.elo-web.fr/',
+        titrePageDéveloppees : ''
     }
 ]

@@ -1,13 +1,11 @@
 import React from "react"
 import '../../sass/intro.scss';
-import Photo from "../../images/photo.jpg";
 	
 const Intro = () => {
 
     return (
         <>	
         <section className="intro background_section">
-		<img src={Photo} alt="" className="intro_img"></img>
 			<article className="intro_titles">
 					<h3>Bienvenue sur mon portfolio !</h3>
 					<p className="intro_titles_subtitle">Après avoir travaillé 5 ans en tant que technicienne informatique, 

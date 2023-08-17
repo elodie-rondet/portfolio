@@ -10,6 +10,18 @@ import { useState } from 'react';
 	
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
+	const subtitle = "Développeuse Web";
+	let index = 0;
+	const AfficheSubTitle = () => {
+		for (index = 0; subtitle.length; ++index) {
+			const slicedItems = subtitle.slice(0, index);
+			index++;
+			if (index > subtitle.length)
+			index = 0;
+
+		}
+	}
+	  
     return (
 	<>	
 	<header className={toggle ? "header_modal_open" : "header"}>
@@ -20,7 +32,7 @@ const Header = () => {
 			<NavLink end to='/'>
 			<div className="header_titles">
 				<h1 className="header_titles_title">Rondet Elodie</h1>
-				<h2 className="header_titles_subtitle">Développeuse Web</h2>
+				<h2 className="header_titles_subtitle">{AfficheSubTitle}</h2>
 			</div>
 			</NavLink>
 			<button className="button button--outlined">
@@ -36,7 +48,7 @@ const Header = () => {
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
-						<img src={MenuBurger} alt="" className="menu-burger"></img>
+						<img src={MenuBurger} alt="menumenu" className="menu-burger"></img>
 					</label>
 					<input type="checkbox" id="nav" className="nav-opener" />
 					<div className="nav">
