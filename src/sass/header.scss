@@ -13,8 +13,7 @@
 }
 
 .nav {
-  width: 0;
-  height: 0;
+  height: 100vw;
   display: grid;
   grid-template-rows: var(--nav-height) 30% auto;
   grid-template-columns: 100%;
@@ -22,7 +21,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 300ms ease-out, width 0ms 300ms, height 0ms 300ms;
   background-color: #f2a154;
   @media (min-width: 768px) {
@@ -150,6 +149,7 @@
 
 
 .btn-open {
+  transform: translateY(7px);
   border-radius: 8px;
   @media(max-width: 768px) {
     border-radius: 8px;
@@ -159,8 +159,8 @@
 }
 }
 
-.btn-open:active, .btn-open:focus {
-  transform: translateY(7px);
+.hide {
+display:none;
 }
 
 .nav-link-opener {
@@ -219,16 +219,16 @@
 }
 
 .nav-opener {
-  display: none;
-}
-
-.nav-opener:checked + .nav {
-  width: 300px;
+    width: 300px;
   height: var(--screen-height);
   opacity: 1;
   transition: transform .45s ease-in-out,-webkit-transform .45s ease-in-out;
 
   animation: nav-opener 3s;
+}
+
+.nav-opener:checked + .nav {
+
 }
 @keyframes nav-opener{
   0%{
@@ -243,6 +243,7 @@
 .logo_github {
 width:2.5rem;
 height:2.5rem;	
+cursor: pointer;
 @media(max-width: 767px){
   margin-bottom: -5%;
 }
@@ -362,7 +363,7 @@ margin-top: 5%;
 
 .header_titles_title {
 font-family: Raleway-Medium;
-font-size: 23px;
+font-size: 30px;
 margin-bottom: 0;
 margin-top: 8px;
 margin-left: 5%;
@@ -372,13 +373,10 @@ width: 100%;
   font-size: 20px;
   margin-top: -5%;
   }
-  @media(max-width: 767px){
-    display:none;
-    }
 }
 
 .header_titles_subtitle {
-    font-size: 16px;
+  font-size: 20px;
     margin-top: 0;
     opacity: .7;
 	margin-left: 25%;
@@ -388,37 +386,18 @@ width: 100%;
     margin-left: -28%;
     font-size: 20px;
   }
-  @media(max-width: 767px){
-    display:none;
-    }
 }
 
 
 
 /* Animations des lettres */
-h2.header_titles_subtitle span {opacity:0;}
-.letter01 {animation:letters 0s ease 0000ms forwards;}
-.letter02 {animation:letters 0s ease 0500ms forwards;}
-.letter03 {animation:letters 0s ease 0700ms forwards;}
-.letter04 {animation:letters 0s ease 0900ms forwards;}
-.letter05 {animation:letters 0s ease 1100ms forwards;}
-.letter06 {animation:letters 0s ease 1300ms forwards;}
-.letter07 {animation:letters 0s ease 1500ms forwards;}
-.letter08 {animation:letters 0s ease 1700ms forwards;}
-.letter09 {animation:letters 0s ease 1900ms forwards;}
-.letter10 {animation:letters 0s ease 2100ms forwards;}
-.letter11 {animation:letters 0s ease 2300ms forwards;}
-.letter12 {animation:letters 0s ease 2500ms forwards;}
-.letter13 {animation:letters 0s ease 2700ms forwards;}
-.letter14 {animation:letters 0s ease 2900ms forwards;}
-.letter15 {animation:letters 0s ease 3100ms forwards;}
-.letter16 {animation:letters 0s ease 3300ms forwards;}
-@keyframes letters {
-	0% {opacity:0;}
-	100% {opacity:1;}
+  h2.header_titles_subtitle {
+    margin-top: 2px;
 }
-.letter12 {
-  margin-left: 10px;}
+.letter{
+color:#f2a154;
+}
+
 
 
 .header_links {

@@ -39,7 +39,7 @@ const IntroProjets = () => {
         </NavLink>
 	</li>
 		<li className="project_item">
-		<NavLink className="nav-link" end to="Nina Carducci">
+		<NavLink className="nav-link" end to="nina-carducci">
 			<figure className="project_item_figure background_section">
 				<img src={NinaCarducci} alt="Nina carducci - JavaScript openclassrooms" className="project_item_figure_img"></img>
 				<figcaption className="project_item_figcaption">

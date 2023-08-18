@@ -5,12 +5,15 @@ import Intro from "../components/Accueil/Intro";
 import IntroCompetences from "../components/Accueil/IntroCompetences";
 import IntroProjets from "../components/Accueil/IntroProjets";
 import '../sass/main.scss';
+import { useState } from 'react';
 
 const Accueil = () => {
+    let page = "page";
+    const [toggle, setToggle] = useState(false);
     return (
         <>
-            <Header />
-            <Intro />
+            <Header/>
+            <Intro page ={!toggle} />
             <IntroCompetences />
             <IntroProjets />
             <Footer />

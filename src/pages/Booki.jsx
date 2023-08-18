@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/Layout/Header";
+import Intro from "../components/Accueil/Intro";
 import { ProjectsList  } from '../components/ProjectsList/projectsList';
 import Footer from "../components/Layout/Footer";
 import Gallery from "../components/Projets/Gallerie";
@@ -14,16 +15,29 @@ const Booki = () => {
     const { name } = useParams()
     const project = ProjectsList.find(project => project.name === name)
     const [toggle, setToggle] = useState(false);
+    let competences4 = false;
+    let competences3 = false;
     const classCompetences = project.classcompetences;
+    if (project.competences4 !== "")
+    {competences4 = true;}
+    if (project.competences3 !== "")
+    {competences3 = true;}
+
+    let TitreProjet = "";
+    if (project.name === "mon-vieux-grimoire")
+    TitreProjet = "Mon Vieux Grimoire";
+    else if (project.name === "sophie-bluel")
+    TitreProjet = "Sophie Bluel";
     return (
         <>
-    <Header />
+    <Header classHeader={toggle}/>
+    <Intro page={toggle}/>
     {toggle && (<>
     
     <img className="close" src={project.fermeture} alt="" onClick={() => {setToggle(!toggle)}}></img>
     <Gallery imageSlider={project.pictures} classSlider={"img-carousel"} /></>)}
     <section className="project_page_pres background_section">
-    	<h1>Projet : {project.name}</h1>
+    	<h1>Projet : {project.name === "mon-vieux-grimoire" || project.name === "sophie-bluel" ? TitreProjet :project.name}</h1>
     	<article className="project_page_pres_article">
     	<div className="conteneur_article">
     		<img className="img-article" src={project.imageAccueil} alt={name}></img>
@@ -49,7 +63,11 @@ const Booki = () => {
     			</div>
                 <div className={"conteneur-titre-text"+classCompetences}src={project.competences}>
                 <h2 className="project_page_pres_title">{project.technologies}</h2>
-                <img className={"img-techno-optimisation"+classCompetences}src={project.competences} alt="Compétences"/>
+                <li class="techno-item">{project.competences}</li>
+                <li class="techno-item">{project.competences1}</li>
+                <li class="techno-item">{project.competences2}</li>
+                <li class={competences3 === true ? 'techno-item' : 'techno-item-hide'}>{project.competences3}</li>
+                <li class={competences4 === true ? 'techno-item' : 'techno-item-hide'}>{project.competences4}</li>
                 </div>
 
     		</div>
@@ -71,7 +89,7 @@ const Booki = () => {
                                 src={picture} 
                                 alt={project.name} 
                                 className={"img-article-horizontal-booki"} 
-                                onClick={() => {setToggle(!toggle)}}
+                                onClick={() => {setToggle(!toggle);}}
                             />
                             </div>
                         ))}

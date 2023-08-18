@@ -2,11 +2,13 @@ import React from "react"
 import '../../sass/introCompetences.scss';
 import LogoFront from "../../images/logo-frontend.png";
 import LogoBack from "../../images/logo-backend.png";
+import LogoOutil from "../../images/logo-outil.png";
 	
 const IntroCompetences = () => {
 
     return (
         <>	
+         <h1 className="competences_title">Compétences</h1>
      <section class="competences">
      <div className="conteneur">
         <img src={LogoFront} alt="Logo Front" className="competences_img"></img>
@@ -38,6 +40,8 @@ const IntroCompetences = () => {
         </ul>
         </div>
         </div>
+        <div className="conteneur">
+        <img src={LogoOutil} alt="Logo Outil" className="competences_img"></img>
         <div className="competences_accueil">
         <h1 className="competences_title">Outils maitrisés</h1>
         <ul className="technologies-list">
@@ -46,6 +50,7 @@ const IntroCompetences = () => {
             <li className="techno-item">Github</li>
             <li className="techno-item">SVN</li>
         </ul>
+        </div>
         </div>
 
         </section>

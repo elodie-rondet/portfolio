@@ -6,40 +6,27 @@ import Logo from "../../images/logo.png";
 import LogoGithub from "../../images/logo_github.png";
 import '../../sass/header.scss';
 import ImageModale from "../../images/photo.jpg";
+import Fermeture from "../../images/fermeture.png";
 import { useState } from 'react';
 	
-const Header = () => {
+const Header = (classHeader) => {
 const [toggle, setToggle] = useState(false);
+const [close, setClose] = useState(true);
 let contenu = " ";
 
 	  
     return (
 		
 	<>	
-	<header className={toggle ? "header_modal_open" : "header"}>
+	<header className={toggle || classHeader ? "header_modal_open" : "header"}>
 		<div className="header_box">
 			<NavLink end to='/'>
-            	<img className="logo" src={Logo} alt=""></img>
-			</NavLink>
-			<NavLink end to='/'>
 			<div className="header_titles">
-				<h1 className="header_titles_title">Rondet Elodie</h1>
+				<h1 className="header_titles_title">
+				<span class="letter">R</span>ondet <span class="letter">E</span>lodie
+				</h1>
 				<h2 className="header_titles_subtitle">
-				<span class="letter01">D</span>
-				<span class="letter02">é</span>
-				<span class="letter03">v</span>
-				<span class="letter04">e</span>
-				<span class="letter05">l</span>
-				<span class="letter06">o</span>
-				<span class="letter07">p</span>
-				<span class="letter08">p</span>
-				<span class="letter09">e</span>
-				<span class="letter10">u</span>
-				<span class="letter11">r</span>
-				<span class="letter12"></span>
-				<span class="letter13">w</span>
-				<span class="letter14">e</span>
-				<span class="letter15">b</span>
+				<span class="letter">D</span>éveloppeur <span class="letter">w</span>eb
 					</h2>
 			</div>
 			</NavLink>
@@ -52,26 +39,33 @@ let contenu = " ";
 			
 			Contact
 			</button>
+			<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/">
 			<img className="logo_github" src={LogoGithub} alt=""></img>
+			</NavLink>
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
-						<img src={MenuBurger} alt="menumenu" className="menu-burger"></img>
+						<img src={MenuBurger} alt="menumenu" className="menu-burger" onClick={() => {setClose(!close)
+					}
+					
+					}></img>
 					</label>
-					<input type="checkbox" id="nav" className="nav-opener" />
-					<div className="nav">
+					<div className={close  ? "nav hide" :"nav"}>
 						<div className="nav-header">
+						<img className="close" src={Fermeture} alt="" onClick={() => {setClose(!close)}}></img>
 						</div>
 						<ul className="nav-links">
 							<label className="btn btn-nav" htmlFor="nav">
 							</label>
-							<NavLink className="nav-link" end to='/'>
+							<NavLink className="nav-link" end to='/' onClick={() => {setClose(!close)}}>
 							Accueil
 							</NavLink>
 							<NavLink className="nav-link" end to='/Projets'>
 							Projets
 							</NavLink>
-							<NavLink className="nav-link" end to='/Contact'>
+							<NavLink className="nav-link" onClick={() => {setClose(!close)
+							setToggle(!toggle)}
+						}>
 							Contact
 							</NavLink>
 						</ul>
