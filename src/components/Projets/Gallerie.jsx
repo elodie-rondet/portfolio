@@ -19,6 +19,7 @@ export default function Slider({imageSlider, classSlider}) {
         if(currentIndex === 0)
             setCurrentIndex(imageSlider.length - 1)
     }
+    document
 
 
     return (
