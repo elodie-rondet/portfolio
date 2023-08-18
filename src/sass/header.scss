@@ -20,14 +20,19 @@
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 5%;
   opacity: 1;
   transition: opacity 300ms ease-out, width 0ms 300ms, height 0ms 300ms;
-  background-color: #f2a154;
+  background-color: #eb7401;
   @media (min-width: 768px) {
   
     grid-template-rows: var(--nav-height) auto;
     grid-template-columns: var(--nav-width) auto;
+  
+  }
+  @media (max-width: 767px) {
+    width: 70%;
+    height: auto;
   
   }
 }
@@ -35,14 +40,14 @@
 .nav-header {
   display: flex;
   justify-content: space-between;
-  background-color: #f2a154;
+  background-color: #eb7401;
 @media (min-width: 768px) {
     grid-column-start: span 2;
   }
 }
 
 .nav-links {
-  background-color: #f2a154;
+  background-color: #eb7401;
   padding: 0;
   margin: 0;
   display: grid;
@@ -244,14 +249,17 @@ display:none;
 width:2.5rem;
 height:2.5rem;	
 cursor: pointer;
+aspect-ratio: 226/214;
 @media(max-width: 767px){
   margin-bottom: -5%;
+  margin-top: -15%;
+  margin-left: 68%;
 }
 @media(min-width: 767.01px) and (max-width: 1023px){
   margin-bottom: -2%;
   position: absolute;
-  margin-top: -7.5%;
-  margin-left: 34.5%;
+  margin-top: -12%;
+  margin-left: 85%;
 }
 }
 /* logo */
@@ -277,7 +285,7 @@ padding-left: 20%;
 }
 
 /* Header */
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .header_box {
     flex-direction:column;
     text-align: center
@@ -290,8 +298,14 @@ padding-left: 20%;
 
     .header_titles {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: -10%;
     }
+}
+@media(min-width: 767.01px)and (max-width: 1023px) {
+
+  .header_titles {
+  margin-top: 15%;
+  }
 }
 
 .header {
@@ -358,7 +372,7 @@ padding-left: 20%;
 }
 
 .menu-burger {
-margin-top: 5%;
+margin-top: -5%;
 }
 
 .header_titles_title {
@@ -395,7 +409,7 @@ width: 100%;
     margin-top: 2px;
 }
 .letter{
-color:#f2a154;
+color:#eb7401;
 }
 
 
@@ -424,8 +438,8 @@ color:#f2a154;
 /* bouton cv */
 .button--outlined {
 background: transparent;
-box-shadow: inset 0 0 0 2px #f2a154;
-color: #f2a154;
+box-shadow: inset 0 0 0 2px #eb7401;
+color: #eb7401;
 font-weight: 500;
 border-radius: 30px;
 border: none;
@@ -435,7 +449,7 @@ margin-left: 55%;
 width: 4%;
 animation: title-append 0.4s ease-out 0.4s both;
 a{
-  color: #f2a154;
+  color: #eb7401;
   }
   @media(max-width: 767px) {
     margin-left: -5%;
@@ -453,8 +467,8 @@ a{
 
 .button-page{
   background: transparent;
-  box-shadow: inset 0 0 0 2px #f2a154;
-  color: #f2a154;
+  box-shadow: inset 0 0 0 2px #eb7401;
+  color: #eb7401;
   font-weight: 500;
 border-radius: 30px;
 border:none;
@@ -462,7 +476,7 @@ padding:10px;
 cursor:pointer;
 animation: title-append .35s ease-out .4s both;
 a{
-  color: #f2a154;
+  color: #eb7401;
   }
   @media(min-width: 767.01px) and (max-width: 1023px) {
     margin-left: 25%;
@@ -474,8 +488,8 @@ a{
 
 .button-page-lien{
   background: transparent;
-  box-shadow: inset 0 0 0 2px #f2a154;
-  color: #f2a154;
+  box-shadow: inset 0 0 0 2px #eb7401;
+  color: #eb7401;
   font-weight: 500;
 border-radius: 30px;
 border:none;
@@ -483,7 +497,7 @@ padding:10px;
 cursor:pointer;
 animation: title-append .35s ease-out .4s both;
 a{
-  color: #f2a154;
+  color: #eb7401;
   }
 }
 

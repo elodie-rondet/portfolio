@@ -8,8 +8,7 @@ import '../sass/main.scss';
 import { useState } from 'react';
 
 const Accueil = () => {
-    let page = "page";
-    const [toggle, setToggle] = useState(false);
+    const [toggle] = useState(false);
     return (
         <>
             <Header/>

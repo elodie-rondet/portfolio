@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import ArrowLeft from "../../images/angleLeft.png";
-import ArrowRight from "../../images/angleRight.png";
+import ArrowLeft from "../../images/angleLeft.webp";
+import ArrowRight from "../../images/angleRight.webp";
 import '../../sass/gallery.scss';
 
 export default function Slider({imageSlider, classSlider}) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [toggle, setToggle] = useState(false);
 
     const nextSlide = () => {
         setCurrentIndex(currentIndex + 1)

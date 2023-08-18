@@ -1,18 +1,16 @@
 import React from "react"
 import { NavLink } from 'react-router-dom';
 import CV from '../../media/cv.pdf';
-import MenuBurger from "../../images/menu-burger.png";
-import Logo from "../../images/logo.png";
-import LogoGithub from "../../images/logo_github.png";
+import MenuBurger from "../../images/menu-burger.webp";
+import LogoGithub from "../../images/logo_github.webp";
 import '../../sass/header.scss';
 import ImageModale from "../../images/photo.jpg";
-import Fermeture from "../../images/fermeture.png";
+import Fermeture from "../../images/fermeture.webp";
 import { useState } from 'react';
 	
 const Header = (classHeader) => {
 const [toggle, setToggle] = useState(false);
 const [close, setClose] = useState(true);
-let contenu = " ";
 
 	  
     return (
@@ -39,13 +37,13 @@ let contenu = " ";
 			
 			Contact
 			</button>
-			<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/">
-			<img className="logo_github" src={LogoGithub} alt=""></img>
+			<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/" name="github" alt="github" >
+			<img className="logo_github" src={LogoGithub} alt="logo"></img>
 			</NavLink>
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
-						<img src={MenuBurger} alt="menumenu" className="menu-burger" onClick={() => {setClose(!close)
+						<img src={MenuBurger} alt="menumenu" className="menu-burger" width="48" height="42" onClick={() => {setClose(!close)
 					}
 					
 					}></img>

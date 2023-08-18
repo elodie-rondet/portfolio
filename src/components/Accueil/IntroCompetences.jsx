@@ -1,8 +1,8 @@
 import React from "react"
 import '../../sass/introCompetences.scss';
-import LogoFront from "../../images/logo-frontend.png";
-import LogoBack from "../../images/logo-backend.png";
-import LogoOutil from "../../images/logo-outil.png";
+import LogoFront from "../../images/logo-frontend.webp";
+import LogoBack from "../../images/logo-backend.webp";
+import LogoOutil from "../../images/logo-outil.webp";
 	
 const IntroCompetences = () => {
 
@@ -11,7 +11,7 @@ const IntroCompetences = () => {
          <h1 className="competences_title">Compétences</h1>
      <section class="competences">
      <div className="conteneur">
-        <img src={LogoFront} alt="Logo Front" className="competences_img"></img>
+        <img src={LogoFront} alt="Logo Front" className="competences_img" width="167" height="146"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Front-End</h1>
         <ul className="technologies-list">
@@ -26,7 +26,7 @@ const IntroCompetences = () => {
         </div>
         
         <div className="conteneur">
-        <img src={LogoBack} alt="Logo Backend" className="competences_img"></img>
+        <img src={LogoBack} alt="Logo Backend" className="competences_img" width="167" height="146"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Back-End</h1>
         <ul className="technologies-list">
@@ -41,7 +41,7 @@ const IntroCompetences = () => {
         </div>
         </div>
         <div className="conteneur">
-        <img src={LogoOutil} alt="Logo Outil" className="competences_img"></img>
+        <img src={LogoOutil} alt="Logo Outil" className="competences_img" width="167" height="146"></img>
         <div className="competences_accueil">
         <h1 className="competences_title">Outils maitrisés</h1>
         <ul className="technologies-list">

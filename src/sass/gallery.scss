@@ -23,10 +23,14 @@ img.img-carousel{
 
 img.close {
     z-index: 10000;   
-    width: 4rem;
-    right:0%;
+    width: 3.5%;
+    right:5%;
     top:8%;
     position: fixed;
+    @media (max-width: 767px) {
+        width: 15%;
+      
+      }
 }
 img.close:hover,img.sophie-carousel-1:hover,img.sophie-carousel:hover,img.sophie-carousel-2:hover {
     cursor: pointer;
@@ -76,14 +80,12 @@ div#fenetre_modal_open {
         &_right{
             right: 25px;
             position: fixed;
-            width: 4rem;
-            height: 4rem;
+            height: 7%;
         }
         &_left{
             left: 25px;
             position: fixed;
-            width: 4rem;
-            height: 4rem;
+            height: 7%;
         }
     }
     .slideCount{

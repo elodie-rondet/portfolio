@@ -1,46 +1,39 @@
 // LOGO && ICONS
-import MenuBurger from "../../images/menu-burger.png";
-import Logo from "../../images/logo.png";
-import LogoGithub from "../../images/logo_github.png";
-import CompetencesBooki from "../../images/bookiIcons.png";
-import CompetencesSophieBluel from "../../images/competences_booki.png";
-import CompetencesNinaCarducci from "../../images/competences_optimisation.png";
-import ImageModale from "../../images/photo.jpg";
-import Fermeture from "../../images/fermeture.png";
+import Fermeture from "../../images/fermeture.webp";
 
 // BOOKI
-import BookiDesktop from "../../images/booki.png";
-import BookiTablette from "../../images/booki_tablette.png";
-import BookiMobile from "../../images/booki-mobile.png";
+import BookiDesktop from "../../images/booki.webp";
+import BookiTablette from "../../images/booki-tablette.webp";
+import BookiMobile from "../../images/booki-mobile.webp";
 
 // KASA
 import KasaAccueil from "../../images/kasa-accueil.webp";
-import Kasa from "../../images/kasa.png";
+import Kasa from "../../images/kasa.webp";
 import KasaAppartement from "../../images/kasa-appartement.webp";
 import KasaErreur from "../../images/kasa-pageErreur.webp";
 import KasaApropos from "../../images/kasa-Apropos.webp";
 import KasaMobile from "../../images/kasa-mobile.webp";
 
 // SOPHIE BLUEL
-import SophieBluelGalerie from "../../images/galerie_photo.png";
-import SophieBluelTablette from "../../images/sophie-bluel-tablette.png";
-import SophieBluelLogin from "../../images/sophie_bluel_login.png";
-import SophieBluelAccueil from "../../images/sophie-bluel.png";
-import SophieBluelAjoutTravaux from "../../images/popup_ajout_photo.png";
+import SophieBluelGalerie from "../../images/galerie_photo.webp";
+import SophieBluelTablette from "../../images/sophie-bluel-tablette.webp";
+import SophieBluelLogin from "../../images/sophie_bluel_login.webp";
+import SophieBluelAccueil from "../../images/sophie-bluel.webp";
+import SophieBluelAjoutTravaux from "../../images/popup_ajout_photo.webp";
 
 // NINA CARDUCCI
-import NinaCarducciAccueil from "../../images/nina_carducci_page.png";
+import NinaCarducciAccueil from "../../images/nina_carducci_page.webp";
 
 // MON VIEUX GRIMOIRE
-import MonVieuxGrimoireAjoutLivre from "../../images/page_ajouter_livre_grimoire.png";
-import MonVieuxGrimoireNotation from "../../images/page_notation_grimoire.png";
-import MonVieuxGrimoireAccueilPage from "../../images/page_accueil_grimoire.png";
-import MonVieuxGrimoireAccueil from "../../images/mon-vieux-grimoire.png";
+import MonVieuxGrimoireAjoutLivre from "../../images/page_ajouter_livre_grimoire.webp";
+import MonVieuxGrimoireNotation from "../../images/page_notation_grimoire.webp";
+import MonVieuxGrimoireAccueilPage from "../../images/page_accueil_grimoire.webp";
+import MonVieuxGrimoireAccueil from "../../images/mon-vieux-grimoire.webp";
 
 //LAURE
-import LaureAccueil from "../../images/laure_accueil.png";
-import LaureVersionMobile from "../../images/laure-mobile.png";
-import LaureVersionDesktop from "../../images/laure_portfolio.png";
+import LaureAccueil from "../../images/laure_accueil.webp";
+import LaureVersionMobile from "../../images/laure-mobile.webp";
+import LaureVersionDesktop from "../../images/laure_portfolio.webp";
 
 export const ProjectsList = [
     {
