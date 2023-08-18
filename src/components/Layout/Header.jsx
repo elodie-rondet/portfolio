@@ -60,7 +60,7 @@ let contenu = " ";
 							<NavLink className="nav-link" end to='/' onClick={() => {setClose(!close)}}>
 							Accueil
 							</NavLink>
-							<NavLink className="nav-link" end to='/Projets'>
+							<NavLink className="nav-link" href="#projets" end to='/#projets'>
 							Projets
 							</NavLink>
 							<NavLink className="nav-link" onClick={() => {setClose(!close)

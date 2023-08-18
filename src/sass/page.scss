@@ -242,6 +242,7 @@ img.img-article-horizontal-booki {
     flex-shrink: 0;
     object-fit: contain;
     scroll-snap-align: start;
+    aspect-ratio: 1/1;
     @media(min-width: 767.01px) and (max-width: 1023px) {
         width: 80%;
         margin: auto;

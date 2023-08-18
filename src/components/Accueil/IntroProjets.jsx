@@ -6,11 +6,12 @@ import SophieBluel from "../../images/sophie-bluel.png";
 import NinaCarducci from "../../images/nina_carducci.png";
 import Kasa from "../../images/kasa.png";
 import MonVieuxGrimoire from "../../images/mon-vieux-grimoire.png";
+import Laure from "../../images/laure_accueil.png";
 	
 const IntroProjets = () => {
     return (
 	<>	
-<section className="competences_section">
+<section id="projets" className="competences_section">
 <h1 className="competences_title">Projets
 </h1>
 <ul className="projects_list">
@@ -68,6 +69,18 @@ const IntroProjets = () => {
 				<figcaption className="project_item_figcaption">
 					<h3 className="project_item_figcaption_title">Mon vieux grimoire</h3>
 					<p className="project_item_figcaption_subtitle">Site de référencement et de notation de livres.  </p>
+				</figcaption>
+			</figure>
+        </NavLink>
+	</li>
+	<li className="project_item">
+        <NavLink className="nav-link" end to="Laure">
+			<figure className="project_item_figure background_section">
+				<img src={Laure} alt="cover Laure" className="project_item_figure_img">
+                </img>
+				<figcaption className="project_item_figcaption">
+					<h3 className="project_item_figcaption_title">Laure</h3>
+					<p className="project_item_figcaption_subtitle">Site Wordpress d'ateliers DIY – Conseils zéro déchet  </p>
 				</figcaption>
 			</figure>
         </NavLink>

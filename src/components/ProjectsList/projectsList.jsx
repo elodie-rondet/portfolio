@@ -14,7 +14,6 @@ import BookiTablette from "../../images/booki_tablette.png";
 import BookiMobile from "../../images/booki-mobile.png";
 
 // KASA
-import Competences from "../../images/competences_kasa.png";
 import KasaAccueil from "../../images/kasa-accueil.webp";
 import Kasa from "../../images/kasa.png";
 import KasaAppartement from "../../images/kasa-appartement.webp";
@@ -37,6 +36,11 @@ import MonVieuxGrimoireAjoutLivre from "../../images/page_ajouter_livre_grimoire
 import MonVieuxGrimoireNotation from "../../images/page_notation_grimoire.png";
 import MonVieuxGrimoireAccueilPage from "../../images/page_accueil_grimoire.png";
 import MonVieuxGrimoireAccueil from "../../images/mon-vieux-grimoire.png";
+
+//LAURE
+import LaureAccueil from "../../images/laure_accueil.png";
+import LaureVersionMobile from "../../images/laure-mobile.png";
+import LaureVersionDesktop from "../../images/laure_portfolio.png";
 
 export const ProjectsList = [
     {
@@ -169,6 +173,34 @@ export const ProjectsList = [
         competences3: 'Github',
         competences4: '',
         classcompetences: '-bluel',
+        fermeture: Fermeture,
+        git:'github du projet',
+        gitLink: 'https://github.com/elodie-rondet/P7-Dev-Web-livres-main',
+        demoLink:'https://mon-vieux-grimoire.elo-web.fr/',
+        titrePageDéveloppees : ''
+    }
+    ,
+    {
+        id: '5',
+        name: 'Laure',
+        resume: '',
+        context: 'Réalisation d\'un site d\'ateliers DIY – Conseils zéro déchet',
+        objectifs: 'Objectifs :',
+        objectifs1: '- Réalisation du site avec Wordpress',
+        objectifs2: '- Réalisation de la version Desktop et mobile',
+        objectifs3: '',
+        objectifs4: '',
+        objectifs5: '',
+        objectifs6: '',        
+        technologies: 'Technologies utilisées :',
+        imageAccueil : LaureAccueil,
+        pictures: [LaureVersionDesktop,LaureVersionMobile],
+        competences: 'HTML',
+        competences1: 'CSS',
+        competences2: 'Wordpress',
+        competences3: '',
+        competences4: '',
+        classcompetences: '-booki',
         fermeture: Fermeture,
         git:'github du projet',
         gitLink: 'https://github.com/elodie-rondet/P7-Dev-Web-livres-main',
