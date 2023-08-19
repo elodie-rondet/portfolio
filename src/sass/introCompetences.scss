@@ -36,16 +36,18 @@ margin: auto;
 }
 
 img.competences_img {
-    margin-left: 25%;
+    margin-left: 30%;
     margin-bottom: -10%;
     z-index: 1;
     position: relative;
     aspect-ratio: 254/222;
 }
+
 .conteneur {
     display: block;
     margin: auto;
 }
+
 
 .competences_accueil {
     display: block;
@@ -58,6 +60,10 @@ img.competences_img {
     background-color: hsla(0, 0%, 100%, 0.5);
     border-radius: 0.5rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+    height:200px;
+    @media all and (max-width:767px) {
+    height:auto;
+    }
 }
 
 

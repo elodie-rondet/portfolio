@@ -12,18 +12,80 @@
   --nav-count: 10;
 }
 
+@keyframes display-navigation {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px)
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+@keyframes svg-appear {
+  0% {
+      opacity: 0;
+      -webkit-transform: rotate(0deg) scale(0);
+      transform: rotate(0deg) scale(0)
+  }
+
+  50% {
+      -webkit-transform: rotate(20deg) scale(1.1);
+      transform: rotate(20deg) scale(1.1)
+  }
+
+  70% {
+      -webkit-transform: rotate(-10deg) scale(.9);
+      transform: rotate(-10deg) scale(.9)
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1)
+  }
+}
+
+@keyframes modal-box-appear {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+      transform: translateY(30px)
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+@keyframes modal-disappear {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}
+
+
 .nav {
-  height: 100vw;
+  height: 200vw;
   display: grid;
   grid-template-rows: var(--nav-height) 30% auto;
   grid-template-columns: 100%;
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 5%;
+  right: 0;
   opacity: 1;
-  transition: opacity 300ms ease-out, width 0ms 300ms, height 0ms 300ms;
-  background-color: #eb7401;
+  background-color: #464646;
+  animation: modal-box-appear  3s;
   @media (min-width: 768px) {
   
     grid-template-rows: var(--nav-height) auto;
@@ -40,23 +102,37 @@
 .nav-header {
   display: flex;
   justify-content: space-between;
-  background-color: #eb7401;
+  background-color: #464646;
 @media (min-width: 768px) {
     grid-column-start: span 2;
   }
 }
 
 .nav-links {
-  background-color: #eb7401;
+  background-color: #464646;
   padding: 0;
-  margin: 0;
+  margin: auto;
   display: grid;
   grid-template-rows: repeat(var(--nav-count), var(--nav-height));
   grid-template-columns: 100%;
-  overflow: auto;
+  overflow: hidden;
   list-style-type: none;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 10%;
+  margin-top: 50%;
+  @media (max-width: 767px) {
+    right:5%;
+  }
+  
+
+
+}
+a.nav-link {
+  color:white;
+}
+
+
+a.nav-link:hover {
+  color:#eb7401
 }
 
 .nav-link {
@@ -227,21 +303,6 @@ display:none;
     width: 300px;
   height: var(--screen-height);
   opacity: 1;
-  transition: transform .45s ease-in-out,-webkit-transform .45s ease-in-out;
-
-  animation: nav-opener 3s;
-}
-
-.nav-opener:checked + .nav {
-
-}
-@keyframes nav-opener{
-  0%{
-        transform: perspective(500px) rotateX(20deg);
-  }
-  100%{
-    transform: translate(0px, 0px);
-  }
 }
 
 /* logo github*/
@@ -259,7 +320,7 @@ aspect-ratio: 226/214;
   margin-bottom: -2%;
   position: absolute;
   margin-top: -12%;
-  margin-left: 85%;
+  margin-left: 80%;
 }
 }
 /* logo */
@@ -373,10 +434,16 @@ padding-left: 20%;
 
 .menu-burger {
 margin-top: -5%;
+@media(min-width: 767.01px) and (max-width: 1023px){
+  margin-top: 100%;
+  margin-right: 50%;
+  right: 50%;
+  position: relative;
+}
 }
 
 .header_titles_title {
-font-family: Raleway-Medium;
+font-family: 'Poppins', sans-serif;
 font-size: 30px;
 margin-bottom: 0;
 margin-top: 8px;
@@ -424,7 +491,7 @@ color:#eb7401;
 }
 
 .header_links a:hover {
-    font-family: Raleway-Bold
+    font-family: 'Poppins', sans-serif;
 }
 
 .header_links_link_CV {
@@ -432,7 +499,7 @@ color:#eb7401;
 }
 
 .active_link {
-    font-family: Raleway-Bold
+    font-family: 'Poppins', sans-serif;
 }
 
 /* bouton cv */
@@ -443,10 +510,11 @@ color: #eb7401;
 font-weight: 500;
 border-radius: 30px;
 border: none;
-padding: 10px;
+padding: 9px;
 cursor: pointer;
 margin-left: 55%;
 width: 4%;
+padding-left: 12px;
 animation: title-append 0.4s ease-out 0.4s both;
 a{
   color: #eb7401;
@@ -458,7 +526,7 @@ a{
 
 }
 @media(min-width: 767.01px) and (max-width: 1023px) {
-  margin-left: 18%;
+  margin-left: 13%;
   width: 6%;
   margin-top: -7%;
   position: absolute;
@@ -479,7 +547,7 @@ a{
   color: #eb7401;
   }
   @media(min-width: 767.01px) and (max-width: 1023px) {
-    margin-left: 25%;
+    margin-left: 20%;
     width: 8%;
     margin-top: -7%;
     position: absolute;
@@ -546,7 +614,7 @@ a{
   top: 40px;
   text-align: center;
   left: 20%;
-  font-family: 'Work Sans';
+  font-family: 'Poppins', sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
@@ -667,7 +735,7 @@ a{
   left: 70px;
   background: #A7A7A7;
   border-radius: 60px;	
-  font-family: 'Syne';
+  font-family: 'Poppins', sans-serif;;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

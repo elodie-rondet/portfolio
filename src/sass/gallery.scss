@@ -23,12 +23,12 @@ img.img-carousel{
 
 img.close {
     z-index: 10000;   
-    width: 3.5%;
-    right:5%;
+    width: 2.5%;
+    right:2%;
     top:8%;
     position: fixed;
     @media (max-width: 767px) {
-        width: 15%;
+        width: 5%;
       
       }
 }

@@ -11,9 +11,9 @@ import Laure from "../../images/laure_accueil.webp";
 const IntroProjets = () => {
     return (
 	<>	
-<section id="projets" className="competences_section">
 <h1 className="competences_title">Projets
 </h1>
+<section id="projets" className="competences_section">
 <ul className="projects_list">
 	<li className="project_item">
     <NavLink className="nav-link" end to="Booki">

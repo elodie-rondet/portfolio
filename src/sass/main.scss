@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&family=Meie+Script&family=Pinyon+Script&family=Poppins:wght@200;300&display=swap');
+
 html {
     background-color: #dfdfe0;
 	background-size:contain;	
-    font-family: Raleway;
     font-size: 17px;
     margin: auto;
     min-height: 100%;
     position: relative;
-    background-color: #eeeeee;
 }
 
 .fond {
@@ -21,7 +21,7 @@ a,html {
 }
 
 a {
-    font-family: Raleway-Medium;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none
 }
 
@@ -44,4 +44,8 @@ li {
 
 body{
   margin-top: -2%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
 }

@@ -16,7 +16,7 @@
     }
     &_titles {
         margin-left: 1.1rem;
-        width:60%;
+        width:67%;
         margin: auto;
         font-size: 20px;
         h3 {
@@ -34,7 +34,7 @@
         margin: auto;
     }
     &_titles_title  {
-        font-family: Raleway-Medium
+        font-family: 'Poppins', sans-serif;
     }
 
 }
@@ -83,16 +83,13 @@ article.intro_titles h3 span,p.intro_titles_subtitle span  {opacity:0;
 .intro.background_section {
     display: flex;
     flex-direction: row;
-    /* margin: auto; */
-    /* max-width: 1200px; */
     padding: 1rem;
-    /* width: 80%; */
     height: 300px;
     z-index: 1;
     background-image: url(../images/fond-test.webp);
     background-size: cover;
     margin-top: -2%;
-    width: 102%;
+    width: 100%;
     background-color: hsla(0, 0%, 100%, 0.8);
     left: 0;
     /* position: fixed; */

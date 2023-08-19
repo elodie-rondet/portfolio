@@ -11,7 +11,7 @@ const IntroCompetences = () => {
          <h1 className="competences_title">Compétences</h1>
      <section class="competences">
      <div className="conteneur">
-        <img src={LogoFront} alt="Logo Front" className="competences_img" width="167" height="146"></img>
+        <img src={LogoFront} alt="Logo Front" className="competences_img" width="147" height="126"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Front-End</h1>
         <ul className="technologies-list">
@@ -26,7 +26,7 @@ const IntroCompetences = () => {
         </div>
         
         <div className="conteneur">
-        <img src={LogoBack} alt="Logo Backend" className="competences_img" width="167" height="146"></img>
+        <img src={LogoBack} alt="Logo Backend" className="competences_img" width="147" height="126"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Back-End</h1>
         <ul className="technologies-list">
@@ -40,8 +40,8 @@ const IntroCompetences = () => {
         </ul>
         </div>
         </div>
-        <div className="conteneur">
-        <img src={LogoOutil} alt="Logo Outil" className="competences_img" width="167" height="146"></img>
+        <div id="conteneur-outil" className="conteneur">
+        <img id="logo-outil" src={LogoOutil} alt="Logo Outil" className="competences_img" width="147" height="126"></img>
         <div className="competences_accueil">
         <h1 className="competences_title">Outils maitrisés</h1>
         <ul className="technologies-list">
