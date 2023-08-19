@@ -11,17 +11,20 @@
     flex-flow: row wrap;
     flex-wrap: wrap;
 }
-
+//#eb7401;
 li.techno-item {
-    border: 1px solid #eb7401;
-    box-shadow: inset 0 0 0 1px #eb7401;
-    color: #eb7401;
+    border: 1px solid #464646;
+    box-shadow: inset 0 0 0 1px #464646;
+    color: #464646;
     padding: 0.3125rem 1rem 0.25rem;
     margin-right: 6px;
     border-radius: 30px;
     font-size: 0.8rem;
     font-weight: 500;
     margin-bottom: 10px;
+}
+li.techno-item:hover {
+    color: #eb7401;
 }
 li.techno-item-hide {
     display: none;
@@ -40,7 +43,6 @@ img.competences_img {
     margin-bottom: -10%;
     z-index: 1;
     position: relative;
-    aspect-ratio: 254/222;
 }
 
 .conteneur {

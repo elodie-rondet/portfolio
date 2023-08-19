@@ -38,7 +38,7 @@ const [close, setClose] = useState(true);
 			Contact
 			</button>
 			<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/" name="github" alt="github" >
-			<img className="logo_github" src={LogoGithub} alt="logo"></img>
+			<img className="logo_github" src={LogoGithub} alt="logo" width="226" height="214"></img>
 			</NavLink>
 			<div className="header_links">
 				<div className="container">

@@ -502,14 +502,17 @@ color:#eb7401;
     font-family: 'Poppins', sans-serif;
 }
 
-/* bouton cv */
+/* bouton cv #464646;*/
+.button--outlined:hover {
+  color:#eb7401;
+}
 .button--outlined {
 background: transparent;
-box-shadow: inset 0 0 0 2px #eb7401;
-color: #eb7401;
-font-weight: 500;
+box-shadow: inset 0 0 0 2px #464646;
+color: #464646;
 border-radius: 30px;
 border: none;
+font-weight: 500;
 padding: 9px;
 cursor: pointer;
 margin-left: 55%;
@@ -517,7 +520,8 @@ width: 4%;
 padding-left: 12px;
 animation: title-append 0.4s ease-out 0.4s both;
 a{
-  color: #eb7401;
+  font-weight: 500;
+  color: #464646;
   }
   @media(max-width: 767px) {
     margin-left: -5%;
@@ -532,11 +536,14 @@ a{
   position: absolute;
 }
 }
-
+//#eb7401,#464646;
+.button-page:hover{
+  color:#eb7401;
+}
 .button-page{
   background: transparent;
-  box-shadow: inset 0 0 0 2px #eb7401;
-  color: #eb7401;
+  box-shadow: inset 0 0 0 2px #464646;
+  color: #464646;
   font-weight: 500;
 border-radius: 30px;
 border:none;
@@ -544,7 +551,7 @@ padding:10px;
 cursor:pointer;
 animation: title-append .35s ease-out .4s both;
 a{
-  color: #eb7401;
+  color: #464646;
   }
   @media(min-width: 767.01px) and (max-width: 1023px) {
     margin-left: 20%;
