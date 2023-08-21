@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../../pages/Accueil";
-import Booki from "../../pages/Booki";
+import Page from "../../pages/Page";
 
 const IndexRoutes = () => {
     return (
@@ -9,7 +9,7 @@ const IndexRoutes = () => {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='*' element={<Home />}/>
-                <Route path='/:name' element={<Booki />}/>
+                <Route path='/:name' element={<Page />}/>
             </Routes>
         </BrowserRouter>
     )

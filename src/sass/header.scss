@@ -130,6 +130,11 @@ a.nav-link {
   color:white;
 }
 
+.conteneur-liens-sociaux {
+  display:flex;
+  gap:20px;
+}
+
 
 a.nav-link:hover {
   color:#eb7401
@@ -447,7 +452,7 @@ font-family: 'Poppins', sans-serif;
 font-size: 30px;
 margin-bottom: 0;
 margin-top: 8px;
-margin-left: 5%;
+margin-left: 0%;
 width: 100%;
 @media(min-width: 767.01px) and (max-width: 1023px){
   margin-left: -31%;
@@ -460,8 +465,7 @@ width: 100%;
   font-size: 20px;
     margin-top: 0;
     opacity: .7;
-	margin-left: 25%;
-  margin-left: 5%;
+	margin-left: 0%;
   width: 100%;
   @media(min-width: 767.01px) and (max-width: 1023px){
     margin-left: -28%;
@@ -527,6 +531,7 @@ a{
     margin-left: -5%;
     width: 18%;
     margin-top: -5%;
+    display:none;
 
 }
 @media(min-width: 767.01px) and (max-width: 1023px) {

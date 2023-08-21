@@ -35,6 +35,12 @@ import LaureAccueil from "../../images/laure_accueil.webp";
 import LaureVersionMobile from "../../images/laure-mobile.webp";
 import LaureVersionDesktop from "../../images/laure_portfolio.webp";
 
+//HOASEN YOGA
+import HoaSenYogaAccueil from "../../images/hoasen-yoga-accueil.webp";
+import HoaSenYogaVersionMobile from "../../images/hoasen-yoga-mobile.webp";
+import HoaSenYogaVersionDesktop from "../../images/hoasen-yoga-desktop.webp";
+
+
 export const ProjectsList = [
     {
         id: '1',
@@ -198,6 +204,34 @@ export const ProjectsList = [
         git:'github du projet',
         gitLink: 'https://github.com/elodie-rondet/P7-Dev-Web-livres-main',
         demoLink:'https://mon-vieux-grimoire.elo-web.fr/',
+        titrePageDéveloppees : ''
+    }
+    ,
+    {
+        id: '6',
+        name: 'HoaSen Yoga',
+        resume: '',
+        context: 'Site dédié à la transmission du Yoga, Cours de Yoga en ligne et sur site ',
+        objectifs: 'Objectifs :',
+        objectifs1: '- Réalisation du site avec Wordpress',
+        objectifs2: '- Réalisation de la version Desktop et mobile',
+        objectifs3: '',
+        objectifs4: '',
+        objectifs5: '',
+        objectifs6: '',        
+        technologies: 'Technologies utilisées :',
+        imageAccueil : HoaSenYogaAccueil,
+        pictures: [HoaSenYogaVersionDesktop,HoaSenYogaVersionMobile],
+        competences: 'HTML',
+        competences1: 'CSS',
+        competences2: 'Wordpress',
+        competences3: '',
+        competences4: '',
+        classcompetences: '-booki',
+        fermeture: Fermeture,
+        git:'github du projet',
+        gitLink: '',
+        demoLink:'https://www.hoasen-yoga.fr/',
         titrePageDéveloppees : ''
     }
 ]

@@ -7,6 +7,7 @@ import NinaCarducci from "../../images/nina_carducci.webp";
 import Kasa from "../../images/kasa.webp";
 import MonVieuxGrimoire from "../../images/mon-vieux-grimoire.webp";
 import Laure from "../../images/laure_accueil.webp";
+import HoaSenYoga from "../../images/hoasen-yoga-accueil.webp";
 	
 const IntroProjets = () => {
     return (
@@ -81,6 +82,18 @@ const IntroProjets = () => {
 				<figcaption className="project_item_figcaption">
 					<h2 className="project_item_figcaption_title">Laure</h2>
 					<p className="project_item_figcaption_subtitle">Site Wordpress d'ateliers DIY – Conseils zéro déchet  </p>
+				</figcaption>
+			</figure>
+        </NavLink>
+	</li>
+	<li className="project_item">
+        <NavLink className="nav-link" end to="HoaSen Yoga">
+			<figure className="project_item_figure background_section">
+				<img src={HoaSenYoga} alt="cover HoaSen Yoga" className="project_item_figure_img" width="361" height="229">
+                </img>
+				<figcaption className="project_item_figcaption">
+					<h2 className="project_item_figcaption_title">HoaSen Yoga</h2>
+					<p className="project_item_figcaption_subtitle">Site Wordpress dédié à la transmission du Yoga  </p>
 				</figcaption>
 			</figure>
         </NavLink>

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import CV from '../../media/cv.pdf';
 import MenuBurger from "../../images/menu-burger.webp";
 import LogoGithub from "../../images/logo_github.webp";
+import Linkedin from "../../images/linkedin.webp";
 import '../../sass/header.scss';
 import ImageModale from "../../images/photo.jpg";
 import Fermeture from "../../images/fermeture.webp";
@@ -37,9 +38,6 @@ const [close, setClose] = useState(true);
 			
 			Contact
 			</button>
-			<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/" name="github" alt="github" >
-			<img className="logo_github" src={LogoGithub} alt="logo" width="226" height="214"></img>
-			</NavLink>
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
@@ -66,6 +64,14 @@ const [close, setClose] = useState(true);
 						}>
 							Contact
 							</NavLink>
+							<div class="conteneur-liens-sociaux">
+								<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/" name="github" alt="github" >
+									<img className="logo_github" src={LogoGithub} alt="logo" width="246" height="233"></img>
+								</NavLink>
+								<NavLink className="nav-link" target="_blank" to="https://www.linkedin.com/in/elodie-rondet-337653121/" name="github" alt="github" >
+									<img className="logo_github" src={Linkedin} alt="logo" width="246" height="262"></img>
+								</NavLink>
+							</div>
 						</ul>
 					</div>
 				</div>
