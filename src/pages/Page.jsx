@@ -28,6 +28,8 @@ const Booki = () => {
     TitreProjet = "Mon Vieux Grimoire";
     else if (project.name === "sophie-bluel")
     TitreProjet = "Sophie Bluel";
+    else if (project.name === "nina-carducci")
+    TitreProjet = "Nina Carducci";
     return (
         <>
     <Header classHeader={toggle}/>
@@ -37,7 +39,7 @@ const Booki = () => {
     <img className="close" src={project.fermeture} alt="" onClick={() => {setToggle(!toggle)}}></img>
     <Gallery imageSlider={project.pictures} classSlider={"img-carousel"} /></>)}
     <section className="project_page_pres background_section">
-    	<h1>Projet : {project.name === "mon-vieux-grimoire" || project.name === "sophie-bluel" ? TitreProjet :project.name}</h1>
+    	<h1>Projet : {project.name === "mon-vieux-grimoire" || project.name === "sophie-bluel"  || project.name === "nina-carducci"? TitreProjet :project.name}</h1>
     	<article className="project_page_pres_article">
     	<div className="conteneur_article">
     		<img className="img-article" src={project.imageAccueil} alt={name}></img>

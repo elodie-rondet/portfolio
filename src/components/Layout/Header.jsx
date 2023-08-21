@@ -30,9 +30,7 @@ const [close, setClose] = useState(true);
 			</div>
 			</NavLink>
 			<button className="button button--outlined">
-			<NavLink className="nav-link" end to={CV}>
-            CV
-			</NavLink>
+			<a className="nav-link" href={CV} download="cv.pdf">CV</a>
 			</button>
 			<button className="button button-page"  onClick={() => {setToggle(!toggle)}}>
 			

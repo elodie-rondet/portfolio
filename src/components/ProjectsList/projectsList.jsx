@@ -98,7 +98,7 @@ export const ProjectsList = [
     },
     {
         id: '3',
-        name: 'Nina Carducci',
+        name: 'nina-carducci',
         resume: 'Création d\'une page web dynamique d\'une architecte',
         context: 'En tant que développeur freelance, il s\'agissait de proposer un service d\'optimisation SEO à de nouveaux clients. Parmi les prospects, il y a le site de Nina Carducci, une photographe. La cliente répond positivement à la proposition en demandant une optimisation de son site.',
         objectifs: 'Objectifs :',
@@ -116,7 +116,7 @@ export const ProjectsList = [
         competences2: 'PageSpeed Inside',
         competences3: 'Github',
         competences4: '',
-        classcompetences: '-carducci',
+        classcompetences: '-bluel',
         fermeture: Fermeture,
         git:'github du projet',
         gitLink: 'https://github.com/elodie-rondet/nina-carducci.github.io-master',
