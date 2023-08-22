@@ -310,13 +310,12 @@ aspect-ratio: 226/214;
 @media(max-width: 767px){
   margin-bottom: -5%;
   margin-top: -15%;
-  margin-left: 68%;
 }
 @media(min-width: 767.01px) and (max-width: 1023px){
   margin-bottom: -2%;
-  position: absolute;
+  position: relative;
   margin-top: -12%;
-  margin-left: 80%;
+  margin-left: 5%;
 }
 }
 /* logo */
