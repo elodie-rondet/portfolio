@@ -564,6 +564,22 @@ a{
   color: #eb7401;
   }
 }
+.button-page-lien-git-hide{
+  display: none;
+}
+.button-page-lien-git{
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #eb7401;
+  color: #eb7401;
+  font-weight: 500;
+border-radius: 30px;
+border:none;
+padding:10px;
+cursor:pointer;
+a{
+  color: #eb7401;
+  }
+}
 
 .container {
   display: grid;

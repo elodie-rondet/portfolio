@@ -17,7 +17,8 @@ const Booki = () => {
     const [toggle, setToggle] = useState(false);
     let competences4 = false;
     let competences3 = false;
-    const classCompetences = project.classcompetences;
+    let classCompetences = project.classcompetences;
+    let classLienGithub = "";
     if (project.competences4 !== "")
     {competences4 = true;}
     if (project.competences3 !== "")
@@ -30,6 +31,8 @@ const Booki = () => {
     TitreProjet = "Sophie Bluel";
     else if (project.name === "nina-carducci")
     TitreProjet = "Nina Carducci";
+    if (project.name === "Laure" || project.name === "HoaSen Yoga")
+    classLienGithub = "-hide"
     return (
         <>
     <Header classHeader={toggle}/>
@@ -75,7 +78,7 @@ const Booki = () => {
     		</div>
     	</article>
     	<div id={"conteneur-button"+classCompetences}>
-    		<button className="button-page-lien" data-testid="button">
+    		<button className={"button-page-lien-git"+classLienGithub} data-testid="button">
                 <a href={project.gitLink}>github du projet</a>
             </button>
     		<button className="button-page-lien" data-testid="button">
