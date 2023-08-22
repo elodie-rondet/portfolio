@@ -27,6 +27,10 @@ img.close {
     right:2%;
     top:8%;
     position: fixed;
+    @media (min-width: 767.01px) and  (max-width:1023px) {
+        width: 8%;
+      
+      }
     @media (max-width: 767px) {
         width: 5%;
       
