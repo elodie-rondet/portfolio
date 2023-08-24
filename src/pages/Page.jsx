@@ -68,11 +68,11 @@ const Booki = () => {
     			</div>
                 <div className={"conteneur-titre-text"+classCompetences}src={project.competences}>
                 <h2 className="project_page_pres_title">{project.technologies}</h2>
-                <li class="techno-item">{project.competences}</li>
-                <li class="techno-item">{project.competences1}</li>
-                <li class="techno-item">{project.competences2}</li>
-                <li class={competences3 === true ? 'techno-item' : 'techno-item-hide'}>{project.competences3}</li>
-                <li class={competences4 === true ? 'techno-item' : 'techno-item-hide'}>{project.competences4}</li>
+                <li className="techno-item-page">{project.competences}</li>
+                <li className="techno-item-page">{project.competences1}</li>
+                <li className="techno-item-page">{project.competences2}</li>
+                <li className={competences3 === true ? 'techno-item-page' : 'techno-item-hide'}>{project.competences3}</li>
+                <li className={competences4 === true ? 'techno-item-page' : 'techno-item-hide'}>{project.competences4}</li>
                 </div>
 
     		</div>

@@ -5,14 +5,27 @@ import MenuBurger from "../../images/menu-burger.webp";
 import LogoGithub from "../../images/logo_github.webp";
 import Linkedin from "../../images/linkedin.webp";
 import '../../sass/header.scss';
-import ImageModale from "../../images/photo.jpg";
+import ImageModale from "../../images/test-visuel-portfolio.png";
 import Fermeture from "../../images/fermeture.webp";
 import { useState } from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 	
 const Header = (classHeader) => {
 const [toggle, setToggle] = useState(false);
 const [close, setClose] = useState(true);
+const form = useRef();
 
+ const sendEmail = (e) => {
+   e.preventDefault();
+	emailjs.init('iFaNbPvcmFu0LXYpu');
+   emailjs.sendForm('service_1kd2zrx', 'template_pvvkowk','#conteneurGallerie')
+     .then((result) => {
+		alert("Votre message a bien été envoyé")
+     }, (error) => {
+         console.log(error)
+     });
+ };
 	  
     return (
 		
@@ -22,10 +35,10 @@ const [close, setClose] = useState(true);
 			<NavLink end to='/'>
 			<div className="header_titles">
 				<h1 className="header_titles_title">
-				<span class="letter">R</span>ondet <span class="letter">E</span>lodie
+				<span className="letter">R</span>ondet <span className="letter">E</span>lodie
 				</h1>
 				<h2 className="header_titles_subtitle">
-				<span class="letter">D</span>éveloppeur <span class="letter">w</span>eb
+				<span className="letter">D</span>éveloppeur <span className="letter">w</span>eb
 					</h2>
 			</div>
 			</NavLink>
@@ -62,7 +75,7 @@ const [close, setClose] = useState(true);
 						}>
 							Contact
 							</NavLink>
-							<div class="conteneur-liens-sociaux">
+							<div className="conteneur-liens-sociaux">
 								<NavLink className="nav-link" target="_blank" to="https://github.com/elodie-rondet/" name="github" alt="github" >
 									<img className="logo_github" src={LogoGithub} alt="logo" width="246" height="233"></img>
 								</NavLink>
@@ -79,24 +92,33 @@ const [close, setClose] = useState(true);
 	{toggle && (
         <div id='fenetre_modal_open'>
 		<aside id="modal_modifier_1" className="modal" >	
-		<div id="wrapper_modal_1">
-		<p id="close"  onClick={() => {setToggle(!toggle)}}	
-		>X</p>
-		<p id="titre_modal_modifier">Me Contacter</p>
-		<img className="img-Contact" src={ImageModale} alt="Contact"></img>
-		<form className="conteneurGallerie">
-		<p className="titre-image">Titre</p>
-		<input className="input-titre"></input>
-		<p className="nom-message">Nom</p>
-		<input className="input-message"></input>
-		<p className="message">Message</p>
-		<textarea id="test"></textarea>
-		<button className="button-valider" type="button">Envoyer</button>
-		</form>
-		</div>
+			<div id="wrapper_modal_1">
+			<p id="close"  onClick={() => {setToggle(!toggle)}}	
+			>X</p>
+			<img className="img-Contact" src={ImageModale} alt="Contact"></img>
+			<form id="conteneurGallerie" className="conteneurGallerie" ref={form}>
+			<p className="titre-image">Titre</p>
+			<input className="input-titre" required></input>
+			<p className="nom-message">Nom</p>
+			<input className="input-message" required></input>
+			<p className="message">Message</p>
+			<textarea id="test" required></textarea>
+			<button className="button-valider" type="button"  ref={form} onClick={(e) => {
+			
+			if (document.querySelector('.input-message').value !== ''
+			&& document.querySelector('#test').value !== ''
+			&& document.querySelector('.input-titre').value !== '') {
+			sendEmail(e);
+			}
+			else
+			 alert('Veuillez remplir tous les champs')
+			}}>Envoyer</button>
+			</form>
+			</div>
 		</aside>
 	</div> 
       )
+	  
 	  }
 	</>
 	    )

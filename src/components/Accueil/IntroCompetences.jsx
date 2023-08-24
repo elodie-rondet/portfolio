@@ -9,7 +9,7 @@ const IntroCompetences = () => {
     return (
         <>	
          <h1 className="competences_title">Compétences</h1>
-     <section class="competences">
+     <section className="competences">
      <div className="conteneur">
         <img src={LogoFront} alt="Logo Front" className="competences_img" width="147" height="126"></img>
         <div className="competences_accueil">
