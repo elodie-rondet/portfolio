@@ -1,6 +1,7 @@
 import React from "react"
 import '../../sass/intro.scss';
 import '../../sass/header.scss';
+import ImageIntro from "../../images/image-banniere.png";
 import { ProjectsList  } from '../../components/ProjectsList/projectsList';
 import { useParams } from 'react-router-dom';
 	
@@ -17,6 +18,8 @@ const Intro = (page) => {
     return (
         project === undefined ? (
         <>	
+		<div class="conteneur-intro">
+		<img className="img-intro" src={ImageIntro} alt=""></img>
         <section className="intro background_section">
 			<article className="intro_titles">
 					<h3>
@@ -57,6 +60,7 @@ const Intro = (page) => {
                 </p>
 			</article>
 	</section>
+	</div>
         </>
     ) :
     (
