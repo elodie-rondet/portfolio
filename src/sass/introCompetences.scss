@@ -52,23 +52,6 @@ margin: auto;
     }
 }
 
-@for $i from 1 through 10 {
-  .share:hover > h1 > span:nth-child(#{$i}):after {
-    $delay: 100 * $i;
-    $random: ($i * 5) - 30;
-    background: white;
-    width: 100%;
-    transition: $transition;
-    transition-delay: $delay + ms;
-    transform: rotate($random + deg);
-  .share:hover > h1 > span:nth-child(#{$i}) {
-    $delayTwo: 110 * $i;
-    color: $background;
-    transition-delay: $delayTwo + ms;
-  }
-  }
-}
-
 
 img.competences_img {
     margin-left: 30%;
