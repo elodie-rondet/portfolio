@@ -12,7 +12,8 @@ import HoaSenYoga from "../../images/hoasen-yoga-accueil.webp";
 const IntroProjets = () => {
     return (
 	<>	
-<h1 className="competences_title">Projets
+<h1 className="competences_titre">
+	Projets
 </h1>
 <section id="projets" className="competences_section">
 <ul className="projects_list">

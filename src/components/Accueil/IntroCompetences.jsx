@@ -8,7 +8,7 @@ const IntroCompetences = () => {
 
     return (
         <>	
-         <h1 className="competences_title">Compétences</h1>
+         <h1 className="competences_titre">Compétences</h1>
   
      <section className="competences">
      <div className="conteneur">

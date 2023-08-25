@@ -19,11 +19,24 @@ text-align: center;
 margin-top: 5%;
 margin-bottom: 3%;
 font-family: 'Playfair Display', serif;
-font-size:35px;
+font-size:30px;
 @media(max-width: 768.99px) {
     font-size:25px;
 }
 }
+
+h1.competences_titre {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: 'Playfair Display', serif;
+    font-size:35px;
+    letter-spacing: 8px;
+    @media(max-width: 768.99px) {
+        font-size:25px;
+    }
+    }
+
 
 .project_item {
     width: 50%;
