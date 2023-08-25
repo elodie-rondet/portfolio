@@ -7,7 +7,7 @@ import Linkedin from "../../images/linkedin.webp";
 import '../../sass/header.scss';
 import ImageModale from "../../images/test-visuel-portfolio.png";
 import Fermeture from "../../images/fermeture.webp";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 	
@@ -16,20 +16,30 @@ const [toggle, setToggle] = useState(false);
 const [close, setClose] = useState(true);
 const form = useRef();
 
+
+useEffect(() => emailjs.init("iFaNbPvcmFu0LXYpu"), []);
  const sendEmail = (e) => {
    e.preventDefault();
-	emailjs.init('iFaNbPvcmFu0LXYpu');
-   emailjs.sendForm('service_1kd2zrx', 'template_pvvkowk','#conteneurGallerie')
+let email = document.querySelector("input.input-message").value;
+let nom = document.querySelector("input.input-titre").value;
+let content = document.querySelector("textarea#test").value;
+   emailjs.send('service_1kd2zrx', 'template_pvvkowk', {
+	name: nom,
+	 recipient: email,
+	 content: content,
+   })
      .then((result) => {
 		alert("Votre message a bien été envoyé")
      }, (error) => {
          console.log(error)
      });
  };
+
 	  
     return (
 		
 	<>	
+	<title>Rondet Elodie</title>
 	<header className={toggle || classHeader ? "header_modal_open" : "header"}>
 		<div className="header_box">
 			<NavLink end to='/'>

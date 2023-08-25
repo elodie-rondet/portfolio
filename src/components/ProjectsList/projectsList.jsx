@@ -106,7 +106,7 @@ export const ProjectsList = [
         objectifs2: '- Mettre en place le référencement local en utilisant Schema.org ;',
         objectifs3: '- Ajouter les metas pour les réseaux sociaux ;',
         objectifs4: '- Faire les modifications liées à l’accessibilité du site ;',
-        objectifs5: '>- Produire un rapport d’optimisation présentant toutes vos actions et leur impact.',
+        objectifs5: '- Produire un rapport d’optimisation présentant toutes vos actions et leur impact.',
         objectifs6: '',        
         technologies: 'Technologies utilisées :',
         imageAccueil : NinaCarducciAccueil,
