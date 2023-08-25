@@ -55,6 +55,8 @@ position: absolute;
 margin-top: 3%;
 border-radius: 180px;
 margin-left: 17%;
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
 @media(min-width: 767.01px) and (max-width: 1023px) {
     margin-left: 2%;
     margin-top: 5%;
@@ -64,6 +66,18 @@ margin-left: 17%;
     margin-left: 25%;
 }
 }
+@keyframes float {
+0% {
+    transform: translatey(0px);
+}
+50% {
+    transform: translatey(-10px);
+}
+100% {
+    transform: translatey(0px);
+}
+}
+
 
 
 
