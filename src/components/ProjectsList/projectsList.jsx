@@ -93,7 +93,7 @@ export const ProjectsList = [
         fermeture: Fermeture,
         git:'github du projet',
         gitLink: 'https://github.com/elodie-rondet/kasa"',
-        demoLink:'https://booki.elo-web.fr/',
+        demoLink:'https://elodie-rondet.github.io/kasa/',
         titrePageDéveloppees : 'Les différentes pages développées'
     },
     {
