@@ -92,7 +92,7 @@ export const ProjectsList = [
         classcompetences: '-kasa',
         fermeture: Fermeture,
         git:'github du projet',
-        gitLink: 'https://github.com/elodie-rondet/kasa"',
+        gitLink: 'https://github.com/elodie-rondet/kasa',
         demoLink:'https://elodie-rondet.github.io/kasa/',
         titrePageDéveloppees : 'Les différentes pages développées'
     },
