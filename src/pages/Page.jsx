@@ -89,7 +89,7 @@ const Booki = () => {
     			<h2>{project.titrePageDéveloppees}</h2>
     			<div className="conteneur_article_image">
                 {project.pictures.map((picture) => (
-                    <div className="conteneur-image">
+                    <div key={picture} className="conteneur-image">
                             <img 
                                 src={picture} 
                                 alt={project.name} 

@@ -22,7 +22,7 @@ export default function Slider({imageSlider, classSlider}) {
 
     return (
         <section  className='carousel'>
-            <img className={classSlider} src={imageSlider[currentIndex]} alt="" />
+            <img key={"img-"+currentIndex} className={classSlider} src={imageSlider[currentIndex]} alt="" />
             {imageSlider.length > 1 && 
                 <>
                     <img 

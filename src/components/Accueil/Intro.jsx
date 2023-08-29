@@ -1,11 +1,11 @@
 import React from "react"
 import '../../sass/intro.scss';
 import '../../sass/header.scss';
-import ImageIntro from "../../images/image-banniere.png";
+import ImageIntro from "../../images/image-banniere.webp";
 import { ProjectsList  } from '../../components/ProjectsList/projectsList';
 import { useParams } from 'react-router-dom';
 	
-const Intro = (page) => {
+const Intro = () => {
     const { name } = useParams()
     const project = ProjectsList.find(project => project.name === name);
     let TitreProjet = "";
@@ -18,9 +18,9 @@ const Intro = (page) => {
     return (
         project === undefined ? (
         <>	
-		<div class="conteneur-intro">
-		<img className="img-intro" src={ImageIntro} alt=""></img>
+		<div className="conteneur-intro">
         <section className="intro background_section">
+		<img className="img-intro" src={ImageIntro} alt=""></img>
 			<article className="intro_titles">
 					<h3>
                 <span className="letter16">B</span>

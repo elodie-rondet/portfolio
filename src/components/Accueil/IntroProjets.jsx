@@ -17,7 +17,7 @@ const IntroProjets = () => {
 </h1>
 <section id="projets" className="competences_section">
 <ul className="projects_list">
-	<li className="project_item">
+	<li key="project_item_1" className="project_item">
     <NavLink className="nav-link" end to="Booki">
 			<figure className="project_item_figure background_section">
 				<img src={BookiPortfolio} alt="page d'accueil agence de voyage" className="project_item_figure_img" width="361" height="229">
@@ -29,7 +29,7 @@ const IntroProjets = () => {
 			</figure>
      </NavLink>
 	</li>
-	<li className="project_item">
+	<li key="project_item_2" className="project_item">
         <NavLink className="nav-link" end to="sophie-bluel">
 			<figure className="project_item_figure background_section">
 				<img src={SophieBluel} alt="Portfolio architecte intérieur" className="project_item_figure_img" width="361" height="229">
@@ -41,7 +41,7 @@ const IntroProjets = () => {
 			</figure>
         </NavLink>
 	</li>
-		<li className="project_item">
+		<li key="project_item_3" className="project_item">
 		<NavLink className="nav-link" end to="nina-carducci">
 			<figure className="project_item_figure background_section">
 				<img src={NinaCarducci} alt="Nina carducci - JavaScript openclassrooms" className="project_item_figure_img" width="361" height="229"></img>
@@ -52,7 +52,7 @@ const IntroProjets = () => {
 			</figure>
         </NavLink>
 	</li>
-	<li className="project_item">
+	<li key="project_item_4" className="project_item">
         <NavLink className="nav-link" end to="Kasa">
 			<figure className="project_item_figure background_section">
 				<img src={Kasa} alt="cover Kasa openclassrooms" className="project_item_figure_img" width="361" height="229"></img>
@@ -63,7 +63,7 @@ const IntroProjets = () => {
 			</figure>
         </NavLink>
 	</li>
-	<li className="project_item">
+	<li key="project_item_5" className="project_item">
         <NavLink className="nav-link" end to="mon-vieux-grimoire">
 			<figure className="project_item_figure background_section">
 				<img src={MonVieuxGrimoire} alt="cover Mon vieux grimoire openclassrooms" className="project_item_figure_img" width="361" height="229">
@@ -75,7 +75,7 @@ const IntroProjets = () => {
 			</figure>
         </NavLink>
 	</li>
-	<li className="project_item">
+	<li key="project_item_6" className="project_item">
         <NavLink className="nav-link" end to="Laure">
 			<figure className="project_item_figure background_section">
 				<img src={Laure} alt="cover Laure" className="project_item_figure_img" width="361" height="229">
@@ -87,7 +87,7 @@ const IntroProjets = () => {
 			</figure>
         </NavLink>
 	</li>
-	<li className="project_item">
+	<li key="project_item_7" className="project_item">
         <NavLink className="nav-link" end to="HoaSen Yoga">
 			<figure className="project_item_figure background_section">
 				<img src={HoaSenYoga} alt="cover HoaSen Yoga" className="project_item_figure_img" width="361" height="229">

@@ -25,6 +25,7 @@ img.close {
       }
     @media (max-width: 767px) {
         width: 10%;
+        right:7%;
       
       }
 }
@@ -60,9 +61,8 @@ div#fenetre_modal_open {
     align-items: center;
     display: flex;
     transform: translateX(0px);
-    @media screen and (max-width: 650px){
-        height: 200px;  
-        margin: 20px auto;   
+    @media all and (max-width: 767px){
+        height: auto;    
     }
     &_arrow{
         position: absolute;
