@@ -50,7 +50,7 @@ export const ProjectsList = [
         objectifs: 'Objectifs :',
         objectifs1: '- Réalisation de la version Desktop, tablette et mobile',
         objectifs2: '- Respecter les contraintes techniques définies (Breakpoint, largeur min max)',
-        objectifs3: '',
+        objectifs3: '- Doit respecter les normes W3C',
         objectifs4: '',
         objectifs5: '',
         objectifs6: '',
