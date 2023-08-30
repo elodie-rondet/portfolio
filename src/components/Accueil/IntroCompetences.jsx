@@ -12,7 +12,7 @@ const IntroCompetences = () => {
   
      <section className="competences">
      <div className="conteneur">
-        <img src={LogoFront} alt="Logo Front" className="competences_img" width="147" height="126"></img>
+        <img src={LogoFront} alt="Logo Front" className="competences_img"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Front-End</h1>
         <ul className="technologies-list">
@@ -27,7 +27,7 @@ const IntroCompetences = () => {
         </div>
         
         <div className="conteneur">
-        <img src={LogoBack} alt="Logo Backend" className="competences_img" width="147" height="126"></img>
+        <img src={LogoBack} alt="Logo Backend" className="competences_img"></img>
         <div className="competences_accueil">
 		<h1 className="competences_title">Back-End</h1>
         <ul className="technologies-list">
@@ -42,7 +42,7 @@ const IntroCompetences = () => {
         </div>
         </div>
         <div id="conteneur-outil" className="conteneur">
-        <img id="logo-outil" src={LogoOutil} alt="Logo Outil" className="competences_img" width="147" height="126"></img>
+        <img id="logo-outil" src={LogoOutil} alt="Logo Outil" className="competences_img"></img>
         <div className="competences_accueil">
         <h1 className="competences_title">Outils maitrisés</h1>
         <ul className="technologies-list">
