@@ -59,6 +59,9 @@ img.competences_img {
     margin-bottom: -20%;
     z-index: 1;
     position: relative;
+    @media(min-width: 767.01px) and (max-width: 1023px) {
+        margin-left: 22%;
+        }
 }
 
 .conteneur {
