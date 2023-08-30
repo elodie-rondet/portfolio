@@ -203,7 +203,7 @@ export const ProjectsList = [
         fermeture: Fermeture,
         git:'github du projet',
         gitLink: 'https://github.com/elodie-rondet/P7-Dev-Web-livres-main',
-        demoLink:'https://mon-vieux-grimoire.elo-web.fr/',
+        demoLink:'https://www.on-se-lance-avec-laure.fr/',
         titrePageDéveloppees : ''
     }
     ,
