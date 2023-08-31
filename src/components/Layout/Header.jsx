@@ -62,7 +62,6 @@ let content = document.querySelector("textarea#test").value;
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
-					<i class="fa fa-bars" aria-hidden="true"></i>
 						<img src={MenuBurger} alt="menumenu" className="menu-burger" onClick={() => {setClose(!close)
 					}
 					
