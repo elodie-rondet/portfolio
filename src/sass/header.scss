@@ -455,18 +455,20 @@ color:#fb641d;
   color:#2c0326;
 }
 .button--outlined {
-background: transparent;
-box-shadow:  1px 1px 2px rgb(157 68 82);
-border-radius: 30px;
-font-weight: 500;
-padding: 9px;
-cursor: pointer;
-margin-left: 55%;
-width: 4%;
-padding-left: 12px;
+  background: #634d41;
+  box-shadow: 1px 1px 2px rgb(157, 68, 82);
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 9px;
+  cursor: pointer;
+  margin-left: 55%;
+  width: 4%;
+  padding-left: 12px;
+  color: white;
+  border: none;
 a{
   font-weight: 500;
-  color: #2c0326;
+  color: white;
   }
   @media(max-width: 767px) {
     margin-left: -5%;
