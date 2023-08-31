@@ -381,6 +381,9 @@ margin-top: -70%;
 width: 100%;
 height:auto;
 margin-left: 25%;
+@media(max-width: 767px) {
+  margin-left: 0%;
+}
 @media(min-width: 767.01px) and (max-width: 1023px){
   margin-top: 15%;
   margin-left: -10%;
