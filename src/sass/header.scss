@@ -78,9 +78,6 @@ a.nav-link {
 }
 
 
-a.nav-link:hover {
-  color:#2c0326;
-}
 
 
 .nav-link {
@@ -451,9 +448,7 @@ color:#fb641d;
 }
 
 /* bouton cv #464646;*/
-.button--outlined:hover {
-  color:#2c0326;
-}
+
 .button--outlined {
   background: #634d41;
   box-shadow: 1px 1px 2px rgb(157, 68, 82);
@@ -484,10 +479,7 @@ a{
   position: absolute;
 }
 }
-//#2c0326,#464646;
-.button-page:hover{
-  color:#2c0326;
-}
+
 .button-page{
   background: transparent;
   box-shadow: inset 0 0 0 2px #464646;
