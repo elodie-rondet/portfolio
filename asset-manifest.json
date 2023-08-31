@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc49b56a.css",
-    "main.js": "/static/js/main.1ff80f58.js",
+    "main.css": "/static/css/main.c28fa311.css",
+    "main.js": "/static/js/main.75f54df2.js",
     "static/media/hoasen-yoga-mobile.webp": "/static/media/hoasen-yoga-mobile.f9dd8d2c71cb5539f9f2.webp",
     "static/media/hoasen-yoga-desktop.webp": "/static/media/hoasen-yoga-desktop.c6c4e68bcb82d2a36679.webp",
     "static/media/cv.pdf": "/static/media/cv.5ce7733434d179fd23ed.pdf",
@@ -31,7 +31,6 @@
     "static/media/sophie_bluel_login.webp": "/static/media/sophie_bluel_login.ba6190b6033c41117c88.webp",
     "static/media/image-banniere.webp": "/static/media/image-banniere.4bd6b567acd6ef3fc31b.webp",
     "static/media/kasa.webp": "/static/media/kasa.f2c36e36c0855aebc8cd.webp",
-    "static/media/fond.png": "/static/media/fond.dc2f6d861233bc096b3c.png",
     "static/media/booki-portfolio.webp": "/static/media/booki-portfolio.ab8f3b0d5deee4956eec.webp",
     "static/media/fond-test.webp": "/static/media/fond-test.f1707abf0f816a5c69b9.webp",
     "static/media/logo-outil.webp": "/static/media/logo-outil.b22e1b4266ad08860ddd.webp",
@@ -40,15 +39,15 @@
     "static/media/logo-frontend.webp": "/static/media/logo-frontend.6e54f3f4161450e69a8f.webp",
     "static/media/logo_github.webp": "/static/media/logo_github.dea29caa969713ab9f15.webp",
     "index.html": "/index.html",
-    "static/media/menu-burger.webp": "/static/media/menu-burger.eccfd7a823ded379ddae.webp",
     "static/media/angleRight.webp": "/static/media/angleRight.d88f27b5c49e3d54dee8.webp",
     "static/media/angleLeft.webp": "/static/media/angleLeft.768c80eb1a7b9d2a7285.webp",
     "static/media/fermeture.webp": "/static/media/fermeture.d6aa697dcb7547b97d08.webp",
-    "main.cc49b56a.css.map": "/static/css/main.cc49b56a.css.map",
-    "main.1ff80f58.js.map": "/static/js/main.1ff80f58.js.map"
+    "static/media/menu-burger.webp": "/static/media/menu-burger.203b6675ceaccd725d07.webp",
+    "main.c28fa311.css.map": "/static/css/main.c28fa311.css.map",
+    "main.75f54df2.js.map": "/static/js/main.75f54df2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc49b56a.css",
-    "static/js/main.1ff80f58.js"
+    "static/css/main.c28fa311.css",
+    "static/js/main.75f54df2.js"
   ]
 }
