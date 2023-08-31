@@ -1,7 +1,6 @@
 import React from "react"
 import { NavLink } from 'react-router-dom';
 import CV from '../../media/cv.pdf';
-import MenuBurger from "../../images/menu-burger.webp";
 import LogoGithub from "../../images/logo_github.webp";
 import Linkedin from "../../images/linkedin.webp";
 import '../../sass/header.scss';
