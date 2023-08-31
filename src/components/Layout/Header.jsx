@@ -62,10 +62,9 @@ let content = document.querySelector("textarea#test").value;
 			<div className="header_links">
 				<div className="container">
 					<label className="btn btn-open" htmlFor="nav">
-						<img src={MenuBurger} alt="menumenu" className="menu-burger" onClick={() => {setClose(!close)
-					}
-					
-					}></img>
+					<div className="menu-burger" onClick={() => {setClose(!close)}}>
+					<span>__</span><span>__</span><span>__</span>
+					</div>
 					</label>
 					<div className={close  ? "nav hide" :"nav"}>
 						<div className="nav-header">
